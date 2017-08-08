@@ -6,39 +6,104 @@ module.exports = [
       company:
       [
         {
-        image:'./image/1.jpg',
+        image:'./image/CongNghe/apple.jpg',
         title:'Apple',
-        href:'google.com',
+        href:'https://www.apple.com/',
         },
         {
-        image:'./image/1.jpg',
-        title:'Apple',
-        href:'google.com',
+        image:'./image/CongNghe/docomo.jpg',
+        title:'Docomo',
+        href:'https://www.docomo.jp',
         },
         {
-        image:'./image/1.jpg',
-        title:'Apple',
-        href:'google.com',
+        image:'./image/CongNghe/HTC.jpg',
+        title:'HTC',
+        href:'https://www.HTC.com',
         },
         {
-        image:'./image/1.jpg',
-        title:'Apple',
-        href:'google.com',
+        image:'./image/CongNghe/kyocera.jpg',
+        title:'Kyocera',
+        href:'https://www.kyocera.jp',
         },
         {
-        image:'./image/1.jpg',
-        title:'Apple',
-        href:'google.com',
+        image:'./image/CongNghe/lenovo.jpg',
+        title:'Lenovo',
+        href:'https://www.lenovo.com',
         },
         {
-        image:'./image/1.jpg',
-        title:'Apple',
-        href:'google.com',
+        image:'./image/CongNghe/LG.jpg',
+        title:'LG',
+        href:'https://www.LG.com',
         },
         {
-        image:'./image/1.jpg',
+        image:'./image/CongNghe/samsung.jpg',
+        title:'Samsung',
+        href:'https://www.samsung.com',
+        },
+        {
+        image:'./image/CongNghe/sharp.jpg',
+        title:'Sharp',
+        href:'https://www.sharp.com',
+        },
+        {
+        image:'./image/CongNghe/SONY.jpg',
+        title:'SONY',
+        href:'https://www.SONY.com',
+        },
+        {
+        image:'./image/CongNghe/toshiba.jpg',
         title:'Apple',
-        href:'google.com',
+        href:'https://www.toshiba.com',
+        },
+              {
+        image:'./image/CongNghe/apple.jpg',
+        title:'Apple',
+        href:'https://www.apple.com/',
+        },
+        {
+        image:'./image/CongNghe/docomo.jpg',
+        title:'Docomo',
+        href:'https://www.docomo.jp',
+        },
+        {
+        image:'./image/CongNghe/HTC.jpg',
+        title:'HTC',
+        href:'https://www.HTC.com',
+        },
+        {
+        image:'./image/CongNghe/kyocera.jpg',
+        title:'Kyocera',
+        href:'https://www.kyocera.jp',
+        },
+        {
+        image:'./image/CongNghe/lenovo.jpg',
+        title:'Lenovo',
+        href:'https://www.lenovo.com',
+        },
+        {
+        image:'./image/CongNghe/LG.jpg',
+        title:'LG',
+        href:'https://www.LG.com',
+        },
+        {
+        image:'./image/CongNghe/samsung.jpg',
+        title:'Samsung',
+        href:'https://www.samsung.com',
+        },
+        {
+        image:'./image/CongNghe/sharp.jpg',
+        title:'Sharp',
+        href:'https://www.sharp.com',
+        },
+        {
+        image:'./image/CongNghe/SONY.jpg',
+        title:'SONY',
+        href:'https://www.SONY.com',
+        },
+        {
+        image:'./image/CongNghe/toshiba.jpg',
+        title:'Apple',
+        href:'https://www.toshiba.com',
         },
       ],
     },
@@ -48,40 +113,56 @@ module.exports = [
       company:
       [
         {
-        image:'./image/2.jpg',
+        image:'./image/MyPham/avo.jpg',
         title:'Apple',
         href:'google.com',
         },
-        {
-        image:'./image/2.jpg',
+       {
+        image:'./image/MyPham/avo.jpg',
         title:'Apple',
         href:'google.com',
         },
-        {
-        image:'./image/2.jpg',
+      {
+        image:'./image/MyPham/avo.jpg',
+        title:'Apple',
+        href:'google.com',
+      },
+
+      {
+        image:'./image/MyPham/avo.jpg',
         title:'Apple',
         href:'google.com',
         },
-        {
-        image:'./image/2.jpg',
+      {
+        image:'./image/MyPham/avo.jpg',
+        title:'Apple',
+        href:'google.com',
+      },
+      {
+        image:'./image/MyPham/avo.jpg',
         title:'Apple',
         href:'google.com',
         },
-        {
-        image:'./image/2.jpg',
+      {
+        image:'./image/MyPham/avo.jpg',
         title:'Apple',
         href:'google.com',
         },
-        {
-        image:'./image/1.jpg',
+      {
+        image:'./image/MyPham/avo.jpg',
         title:'Apple',
         href:'google.com',
-        },
-        {
-        image:'./image/1.jpg',
+      },
+      {
+        image:'./image/MyPham/avo.jpg',
         title:'Apple',
         href:'google.com',
-        },
+      },
+      {
+        image:'./image/MyPham/avo.jpg',
+        title:'Apple',
+        href:'google.com',
+      },
       ],
     },
    {

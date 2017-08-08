@@ -1,14 +1,14 @@
 var Carousel = require('react-3d-carousel');
 var Ease = require('ease-functions');
 var data = require('./data');
-
+var setting = require('./setting');
 var MainView = React.createClass({
     getInitialState: function () {
         return {
             images: this.getImagesFromData(data[0].company),
             href: this.getHrefFromData(data[0].company),
             text: this.getTitleFromData(data[0].company),
-            width: 400,
+            width: setting.imageWidth,
             layout: 'prism',
             ease: 'linear',
             duration: 400
@@ -23,6 +23,7 @@ var MainView = React.createClass({
                 }
             })
         }
+        result =  result.slice(0, setting.imageNumber)
         return result
     },
     getImagesFromData:function(data){
@@ -32,6 +33,7 @@ var MainView = React.createClass({
                 result.push(item.image)
             })
         }
+        result=  result.slice(0, setting.imageNumber)
         return result
     },
     getHrefFromData:function(data){
@@ -41,6 +43,7 @@ var MainView = React.createClass({
                 result.push(item.href)
             })
         }
+        result=  result.slice(0, setting.imageNumber)
         return result
     },
     getTitleFromData:function(data){
@@ -69,8 +72,8 @@ var MainView = React.createClass({
     render: function () {
         return (
             <div style={{width: '100%'}} >
-                <div >
-                    <img src="./image/logo/logo_hayabusa.png" alt="1" height="auto" width="200" />    
+                <div style = {{display:'flex', flexDirection:'row'}}>
+                    <img style={{paddingTop: 25, paddingLeft: 30, width: '200px', height: '30' ,display: 'flex',alignContent: 'center', justifyContent:'center' }} src="./image/logo/logo_hayabusa.png" alt="1" />    
                     <h1 style={{ width: '100%',display: 'flex',alignContent: 'center', justifyContent:'center' }}>
                         Hệ thống doanh nghiệp Nhật và Việt Nam
                     </h1>     
@@ -85,7 +88,8 @@ var MainView = React.createClass({
                     </select>
                 </div>
                 <div style={{marginTop: 50, width: '100%',display: 'flex',alignContent: 'center', justifyContent:'center' }}>
-                    <Carousel width={this.state.width}
+                    <Carousel 
+                            width={this.state.width}
                             images={this.state.images}
                             href={this.state.href}
                             text={this.state.text}

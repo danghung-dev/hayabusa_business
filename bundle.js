@@ -63,7 +63,7 @@
 	var Carousel = __webpack_require__(2);
 	var Ease = __webpack_require__(7);
 	var data = __webpack_require__(8);
-
+	var setting = __webpack_require__(9);
 	var MainView = React.createClass({
 	    displayName: 'MainView',
 
@@ -72,7 +72,7 @@
 	            images: this.getImagesFromData(data[0].company),
 	            href: this.getHrefFromData(data[0].company),
 	            text: this.getTitleFromData(data[0].company),
-	            width: 400,
+	            width: setting.imageWidth,
 	            layout: 'prism',
 	            ease: 'linear',
 	            duration: 400
@@ -87,6 +87,7 @@
 	                }
 	            });
 	        }
+	        result = result.slice(0, setting.imageNumber);
 	        return result;
 	    },
 	    getImagesFromData: function getImagesFromData(data) {
@@ -96,6 +97,7 @@
 	                result.push(item.image);
 	            });
 	        }
+	        result = result.slice(0, setting.imageNumber);
 	        return result;
 	    },
 	    getHrefFromData: function getHrefFromData(data) {
@@ -105,6 +107,7 @@
 	                result.push(item.href);
 	            });
 	        }
+	        result = result.slice(0, setting.imageNumber);
 	        return result;
 	    },
 	    getTitleFromData: function getTitleFromData(data) {
@@ -133,8 +136,8 @@
 	            { style: { width: '100%' } },
 	            React.createElement(
 	                'div',
-	                null,
-	                React.createElement('img', { src: './image/logo/logo_hayabusa.png', alt: '1', height: 'auto', width: '200' }),
+	                { style: { display: 'flex', flexDirection: 'row' } },
+	                React.createElement('img', { style: { paddingTop: 25, paddingLeft: 30, width: '200px', height: '30', display: 'flex', alignContent: 'center', justifyContent: 'center' }, src: './image/logo/logo_hayabusa.png', alt: '1' }),
 	                React.createElement(
 	                    'h1',
 	                    { style: { width: '100%', display: 'flex', alignContent: 'center', justifyContent: 'center' } },
@@ -177,7 +180,8 @@
 	            React.createElement(
 	                'div',
 	                { style: { marginTop: 50, width: '100%', display: 'flex', alignContent: 'center', justifyContent: 'center' } },
-	                React.createElement(Carousel, { width: this.state.width,
+	                React.createElement(Carousel, {
+	                    width: this.state.width,
 	                    images: this.state.images,
 	                    href: this.state.href,
 	                    text: this.state.text,
@@ -210,6 +214,7 @@
 	            images: this.props.images,
 	            text:this.props.text,
 	            href:this.props.href,
+	            width: this.props.width ? this.props.width : '400',
 	            figures: Layout[this.props.layout].figures(this.props.width, this.props.images, 0),
 	            rotationY: 0
 	        };
@@ -229,9 +234,9 @@
 	            return React.createElement(
 	                'figure',
 	                { key: i, style: Util.figureStyle(d) },
-	                  React.createElement('div', { height: '100%', width: '100%' },[
-	                     React.createElement('img', { src: d.image, alt: i, height: '100%', width: '100%' }),
-	                     React.createElement("a", { href:sef.props.href[i],style: {zIndex:1, height:'100',display:'block', fontSize:'25', marginTop:'-130', color: "white", backgroundColor: "rgba(0.5, 0.5, 0.5, 0.9)",textDecoration: 'none'}}, sef.props.text[i])
+	                  React.createElement('a',  { href:sef.props.href[i], target:"_blank" ,style: { height: 'auto', width: sef.state.width+'px',textDecoration: 'none' }},[
+	                     React.createElement('img', { src: d.image, alt: i, height: 'auto', width: sef.state.width+'px' }),
+	                //     React.createElement("a", { href:sef.props.href[i],style: {zIndex:1, height:'100',display:'block', fontSize:'25', marginTop:'-130', color: "white", backgroundColor: "rgba(0.5, 0.5, 0.5, 0.9)",textDecoration: 'none'}}, sef.props.text[i])
 	                 ])
 	            );
 	        });
@@ -740,39 +745,104 @@
 	      company:
 	      [
 	        {
-	        image:'./image/1.jpg',
+	        image:'./image/CongNghe/apple.jpg',
 	        title:'Apple',
-	        href:'google.com',
+	        href:'https://www.apple.com/',
 	        },
 	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/CongNghe/docomo.jpg',
+	        title:'Docomo',
+	        href:'https://www.docomo.jp',
 	        },
 	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/CongNghe/HTC.jpg',
+	        title:'HTC',
+	        href:'https://www.HTC.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/CongNghe/kyocera.jpg',
+	        title:'Kyocera',
+	        href:'https://www.kyocera.jp',
 	        },
 	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/CongNghe/lenovo.jpg',
+	        title:'Lenovo',
+	        href:'https://www.lenovo.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/CongNghe/LG.jpg',
+	        title:'LG',
+	        href:'https://www.LG.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
+	        image:'./image/CongNghe/samsung.jpg',
+	        title:'Samsung',
+	        href:'https://www.samsung.com',
+	        },
+	        {
+	        image:'./image/CongNghe/sharp.jpg',
+	        title:'Sharp',
+	        href:'https://www.sharp.com',
+	        },
+	        {
+	        image:'./image/CongNghe/SONY.jpg',
+	        title:'SONY',
+	        href:'https://www.SONY.com',
+	        },
+	        {
+	        image:'./image/CongNghe/toshiba.jpg',
 	        title:'Apple',
-	        href:'google.com',
+	        href:'https://www.toshiba.com',
+	        },
+	              {
+	        image:'./image/CongNghe/apple.jpg',
+	        title:'Apple',
+	        href:'https://www.apple.com/',
+	        },
+	        {
+	        image:'./image/CongNghe/docomo.jpg',
+	        title:'Docomo',
+	        href:'https://www.docomo.jp',
+	        },
+	        {
+	        image:'./image/CongNghe/HTC.jpg',
+	        title:'HTC',
+	        href:'https://www.HTC.com',
+	        },
+	        {
+	        image:'./image/CongNghe/kyocera.jpg',
+	        title:'Kyocera',
+	        href:'https://www.kyocera.jp',
+	        },
+	        {
+	        image:'./image/CongNghe/lenovo.jpg',
+	        title:'Lenovo',
+	        href:'https://www.lenovo.com',
+	        },
+	        {
+	        image:'./image/CongNghe/LG.jpg',
+	        title:'LG',
+	        href:'https://www.LG.com',
+	        },
+	        {
+	        image:'./image/CongNghe/samsung.jpg',
+	        title:'Samsung',
+	        href:'https://www.samsung.com',
+	        },
+	        {
+	        image:'./image/CongNghe/sharp.jpg',
+	        title:'Sharp',
+	        href:'https://www.sharp.com',
+	        },
+	        {
+	        image:'./image/CongNghe/SONY.jpg',
+	        title:'SONY',
+	        href:'https://www.SONY.com',
+	        },
+	        {
+	        image:'./image/CongNghe/toshiba.jpg',
+	        title:'Apple',
+	        href:'https://www.toshiba.com',
 	        },
 	      ],
 	    },
@@ -782,6 +852,41 @@
 	      company:
 	      [
 	        {
+	        image:'./image/2.jpg',
+	        title:'Apple',
+	        href:'google.com',
+	        },
+	        {
+	        image:'./image/2.jpg',
+	        title:'Apple',
+	        href:'google.com',
+	        },
+	        {
+	        image:'./image/2.jpg',
+	        title:'Apple',
+	        href:'google.com',
+	        },
+	        {
+	        image:'./image/2.jpg',
+	        title:'Apple',
+	        href:'google.com',
+	        },
+	        {
+	        image:'./image/2.jpg',
+	        title:'Apple',
+	        href:'google.com',
+	        },
+	        {
+	        image:'./image/1.jpg',
+	        title:'Apple',
+	        href:'google.com',
+	        },
+	        {
+	        image:'./image/1.jpg',
+	        title:'Apple',
+	        href:'google.com',
+	        },
+	          {
 	        image:'./image/2.jpg',
 	        title:'Apple',
 	        href:'google.com',
@@ -903,6 +1008,15 @@
 	      ],
 	    },
 	];
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+	module.exports = {
+	  imageNumber: 15,
+	  imageWidth: '400', // cann't change this props (no support)
+	};
 
 /***/ })
 /******/ ]);

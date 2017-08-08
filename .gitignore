@@ -1,0 +1,5 @@
+.idea/
+node_modules/
+example/bundle.js.map
+
+npm-debug.log

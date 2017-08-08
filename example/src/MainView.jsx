@@ -11,7 +11,7 @@ var MainView = React.createClass({
             width: setting.imageWidth,
             layout: 'prism',
             ease: 'linear',
-            duration: 400
+            duration: setting.rotateDurarota,
         };
     },
     getCompanyFromId:function(data,id){

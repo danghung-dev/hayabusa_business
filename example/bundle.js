@@ -158,22 +158,22 @@
 	                    React.createElement(
 	                        'option',
 	                        { value: '0' },
-	                        'Chế xuất'
+	                        'Công Nghệ'
 	                    ),
 	                    React.createElement(
 	                        'option',
 	                        { value: '1' },
-	                        'Nông Nghiệp'
+	                        'Mỹ Phẩm'
 	                    ),
 	                    React.createElement(
 	                        'option',
 	                        { value: '2' },
-	                        'Công Nghiệp'
+	                        'Nước Uống'
 	                    ),
 	                    React.createElement(
 	                        'option',
 	                        { value: '3' },
-	                        'Nuôi bò'
+	                        'Default'
 	                    )
 	                )
 	            ),
@@ -747,102 +747,102 @@
 	        {
 	        image:'./image/CongNghe/apple.jpg',
 	        title:'Apple',
-	        href:'https://www.apple.com/',
+	        href:'http://www.apple.com/',
 	        },
 	        {
 	        image:'./image/CongNghe/docomo.jpg',
 	        title:'Docomo',
-	        href:'https://www.docomo.jp',
+	        href:'http://www.docomo.jp',
 	        },
 	        {
 	        image:'./image/CongNghe/HTC.jpg',
 	        title:'HTC',
-	        href:'https://www.HTC.com',
+	        href:'http://www.HTC.com',
 	        },
 	        {
 	        image:'./image/CongNghe/kyocera.jpg',
 	        title:'Kyocera',
-	        href:'https://www.kyocera.jp',
+	        href:'http://www.kyocera.jp',
 	        },
 	        {
 	        image:'./image/CongNghe/lenovo.jpg',
 	        title:'Lenovo',
-	        href:'https://www.lenovo.com',
+	        href:'http://www.lenovo.com',
 	        },
 	        {
 	        image:'./image/CongNghe/LG.jpg',
 	        title:'LG',
-	        href:'https://www.LG.com',
+	        href:'http://www.LG.com',
 	        },
 	        {
 	        image:'./image/CongNghe/samsung.jpg',
 	        title:'Samsung',
-	        href:'https://www.samsung.com',
+	        href:'http://www.samsung.com',
 	        },
 	        {
 	        image:'./image/CongNghe/sharp.jpg',
 	        title:'Sharp',
-	        href:'https://www.sharp.com',
+	        href:'http://www.sharp.com',
 	        },
 	        {
 	        image:'./image/CongNghe/SONY.jpg',
 	        title:'SONY',
-	        href:'https://www.SONY.com',
+	        href:'http://www.SONY.com',
 	        },
 	        {
 	        image:'./image/CongNghe/toshiba.jpg',
 	        title:'Apple',
-	        href:'https://www.toshiba.com',
+	        href:'http://www.toshiba.com',
 	        },
 	              {
 	        image:'./image/CongNghe/apple.jpg',
 	        title:'Apple',
-	        href:'https://www.apple.com/',
+	        href:'http://www.apple.com/',
 	        },
 	        {
 	        image:'./image/CongNghe/docomo.jpg',
 	        title:'Docomo',
-	        href:'https://www.docomo.jp',
+	        href:'http://www.docomo.jp',
 	        },
 	        {
 	        image:'./image/CongNghe/HTC.jpg',
 	        title:'HTC',
-	        href:'https://www.HTC.com',
+	        href:'http://www.HTC.com',
 	        },
 	        {
 	        image:'./image/CongNghe/kyocera.jpg',
 	        title:'Kyocera',
-	        href:'https://www.kyocera.jp',
+	        href:'http://www.kyocera.jp',
 	        },
 	        {
 	        image:'./image/CongNghe/lenovo.jpg',
 	        title:'Lenovo',
-	        href:'https://www.lenovo.com',
+	        href:'http://www.lenovo.com',
 	        },
 	        {
 	        image:'./image/CongNghe/LG.jpg',
 	        title:'LG',
-	        href:'https://www.LG.com',
+	        href:'http://www.LG.com',
 	        },
 	        {
 	        image:'./image/CongNghe/samsung.jpg',
 	        title:'Samsung',
-	        href:'https://www.samsung.com',
+	        href:'http://www.samsung.com',
 	        },
 	        {
 	        image:'./image/CongNghe/sharp.jpg',
 	        title:'Sharp',
-	        href:'https://www.sharp.com',
+	        href:'http://www.sharp.com',
 	        },
 	        {
 	        image:'./image/CongNghe/SONY.jpg',
 	        title:'SONY',
-	        href:'https://www.SONY.com',
+	        href:'http://www.SONY.com',
 	        },
 	        {
 	        image:'./image/CongNghe/toshiba.jpg',
 	        title:'Apple',
-	        href:'https://www.toshiba.com',
+	        href:'http://www.toshiba.com',
 	        },
 	      ],
 	    },
@@ -852,158 +852,310 @@
 	      company:
 	      [
 	        {
-	        image:'./image/2.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/MyPham/avon.jpg',
+	        title:'avon',
+	        href:'http://www.avon.com',
 	        },
-	        {
-	        image:'./image/2.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	       {
+	        image:'./image/MyPham/biore.jpg',
+	        title:'biore',
+	        href:'http://www.biore.com',
 	        },
-	        {
-	        image:'./image/2.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	      {
+	        image:'./image/MyPham/esteelauder.jpg',
+	        title:'esteelauder',
+	        href:'http://www.esteelauder.com',
+	      },
+
+	      {
+	        image:'./image/MyPham/lancome.jpg',
+	        title:'lancome',
+	        href:'http://www.lancome.com',
 	        },
-	        {
-	        image:'./image/2.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	      {
+	        image:'./image/MyPham/loreal.jpg',
+	        title:'loreal',
+	        href:'http://www.loreal.com',
+	      },
+	      {
+	        image:'./image/MyPham/neutrogena.jpg',
+	        title:'neutrogena',
+	        href:'http://www.neutrogena.com',
 	        },
-	        {
-	        image:'./image/2.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	      {
+	        image:'./image/MyPham/nivea.jpg',
+	        title:'nivea',
+	        href:'http://www.nivea.com',
 	        },
-	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	      {
+	        image:'./image/MyPham/olay.jpg',
+	        title:'olay',
+	        href:'http://www.olay.com',
+	      },
+	      {
+	        image:'./image/MyPham/shiseido.jpg',
+	        title:'shiseido',
+	        href:'http://www.shiseido.com',
+	      },
+	      {
+	        image:'./image/MyPham/avon.jpg',
+	        title:'avon',
+	        href:'http://www.avon.com',
 	        },
-	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	       {
+	        image:'./image/MyPham/biore.jpg',
+	        title:'biore',
+	        href:'http://www.biore.com',
 	        },
-	          {
-	        image:'./image/2.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	      {
+	        image:'./image/MyPham/esteelauder.jpg',
+	        title:'esteelauder',
+	        href:'http://www.esteelauder.com',
+	      },
+
+	      {
+	        image:'./image/MyPham/lancome.jpg',
+	        title:'lancome',
+	        href:'http://www.lancome.com',
 	        },
-	        {
-	        image:'./image/2.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	      {
+	        image:'./image/MyPham/loreal.jpg',
+	        title:'loreal',
+	        href:'http://www.loreal.com',
+	      },
+	      {
+	        image:'./image/MyPham/neutrogena.jpg',
+	        title:'neutrogena',
+	        href:'http://www.neutrogena.com',
 	        },
-	        {
-	        image:'./image/2.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	      {
+	        image:'./image/MyPham/nivea.jpg',
+	        title:'nivea',
+	        href:'http://www.nivea.com',
 	        },
-	        {
-	        image:'./image/2.jpg',
-	        title:'Apple',
-	        href:'google.com',
-	        },
-	        {
-	        image:'./image/2.jpg',
-	        title:'Apple',
-	        href:'google.com',
-	        },
-	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
-	        },
-	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
-	        },
+	      {
+	        image:'./image/MyPham/olay.jpg',
+	        title:'olay',
+	        href:'http://www.olay.com',
+	      },
+	      {
+	        image:'./image/MyPham/shiseido.jpg',
+	        title:'shiseido',
+	        href:'http://www.shiseido.com',
+	      },     
 	      ],
 	    },
 	   {
 	      id:'2',
-	      branch: 'Công Nghiệp',
+	      branch: 'Nuoc Uong',
 	      company:
 	      [
 	        {
-	        image:'./image/3.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/NuocUong/asahi.jpg',
+	        title:'asahi',
+	        href:'http://www.asahi.jp',
 	        },
 	        {
-	        image:'./image/3.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/NuocUong/budweiser.jpg',
+	        title:'budweiser',
+	        href:'http://www.budweiser.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/NuocUong/carlsberg.jpg',
+	        title:'carlsberg',
+	        href:'http://www.carlsberg.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/NuocUong/cocacola.jpg',
+	        title:'cocacola',
+	        href:'http://www.cocacola.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/NuocUong/heineken.jpg',
+	        title:'heineken',
+	        href:'http://www.heineken.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/NuocUong/pepsi.jpg',
+	        title:'pepsi',
+	        href:'http://www.pepsi.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
-	        title:'Apple',
-	        href:'google.com',
+	        image:'./image/NuocUong/redbull.jpg',
+	        title:'redbull',
+	        href:'http://www.redbull.com',
+	        },
+	        {
+	        image:'./image/NuocUong/sapporo.jpg',
+	        title:'sapporo',
+	        href:'sapporo.jp',
+	        },
+	        {
+	        image:'./image/NuocUong/saigon.jpg',
+	        title:'saigon',
+	        href:'http://www.saigon.com',
+	        },
+	        {
+	        image:'./image/NuocUong/tiger.jpg',
+	        title:'tiger',
+	        href:'http://www.tiger.com',
+	        },
+	       {
+	        image:'./image/NuocUong/asahi.jpg',
+	        title:'asahi',
+	        href:'http://www.asahi.jp',
+	        },
+	        {
+	        image:'./image/NuocUong/budweiser.jpg',
+	        title:'budweiser',
+	        href:'http://www.budweiser.com',
+	        },
+	        {
+	        image:'./image/NuocUong/carlsberg.jpg',
+	        title:'carlsberg',
+	        href:'http://www.carlsberg.com',
+	        },
+	        {
+	        image:'./image/NuocUong/cocacola.jpg',
+	        title:'cocacola',
+	        href:'http://www.cocacola.com',
+	        },
+	        {
+	        image:'./image/NuocUong/heineken.jpg',
+	        title:'heineken',
+	        href:'http://www.heineken.com',
+	        },
+	        {
+	        image:'./image/NuocUong/pepsi.jpg',
+	        title:'pepsi',
+	        href:'http://www.pepsi.com',
+	        },
+	        {
+	        image:'./image/NuocUong/redbull.jpg',
+	        title:'redbull',
+	        href:'http://www.redbull.com',
+	        },
+	        {
+	        image:'./image/NuocUong/sapporo.jpg',
+	        title:'sapporo',
+	        href:'sapporo.jp',
+	        },
+	        {
+	        image:'./image/NuocUong/saigon.jpg',
+	        title:'saigon',
+	        href:'http://www.saigon.com',
+	        },
+	        {
+	        image:'./image/NuocUong/tiger.jpg',
+	        title:'tiger',
+	        href:'http://www.tiger.com',
 	        },
 	      ],
 	    },
 	   {
 	      id:'3',
-	      branch: 'Nuôi bò',
+	      branch: 'default',
 	      company:
 	      [
 	        {
+	        image:'./image/1.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/2.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/3.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	        {
 	        image:'./image/4.jpg',
 	        title:'Apple',
-	        href:'google.com',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/5.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/6.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/7.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/10.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/9.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/10.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	       {
+	        image:'./image/1.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/2.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/3.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
 	        },
 	        {
 	        image:'./image/4.jpg',
 	        title:'Apple',
-	        href:'google.com',
+	        href:'http://www.google.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
+	        image:'./image/5.jpg',
 	        title:'Apple',
-	        href:'google.com',
+	        href:'http://www.google.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
+	        image:'./image/6.jpg',
 	        title:'Apple',
-	        href:'google.com',
+	        href:'http://www.google.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
+	        image:'./image/7.jpg',
 	        title:'Apple',
-	        href:'google.com',
+	        href:'http://www.google.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
+	        image:'./image/10.jpg',
 	        title:'Apple',
-	        href:'google.com',
+	        href:'http://www.google.com',
 	        },
 	        {
-	        image:'./image/1.jpg',
+	        image:'./image/9.jpg',
 	        title:'Apple',
-	        href:'google.com',
+	        href:'http://www.google.com',
+	        },
+	        {
+	        image:'./image/10.jpg',
+	        title:'Apple',
+	        href:'http://www.google.com',
 	        },
 	      ],
 	    },

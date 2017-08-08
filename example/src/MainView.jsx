@@ -81,10 +81,10 @@ var MainView = React.createClass({
                 <div style={{marginTop: 20,width: '100%',display: 'flex',alignContent: 'center', justifyContent:'center'}}>
                     <span style={{marginTop:5}}> Chọn ngành nghề : </span>
                     <select style={{marginLeft: 20, height: 30, width: 500 }}  onChange={this.handleChange}>
-                        <option value="0">Chế xuất</option>
-                        <option value="1">Nông Nghiệp</option>
-                        <option value="2">Công Nghiệp</option>
-                        <option value="3">Nuôi bò</option>
+                        <option value="0">Công Nghệ</option>
+                        <option value="1">Mỹ Phẩm</option>
+                        <option value="2">Nước Uống</option>
+                        <option value="3">Default</option>
                     </select>
                 </div>
                 <div style={{marginTop: 50, width: '100%',display: 'flex',alignContent: 'center', justifyContent:'center' }}>

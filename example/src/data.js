@@ -13,7 +13,7 @@ module.exports = [
         {
         image:'./image/CongNghe/docomo.jpg',
         title:'Docomo',
-        href:'http://www.docomo.jp',
+        href:'https://www.nttdocomo.co.jp/',
         },
         {
         image:'./image/CongNghe/HTC.jpg',
@@ -23,7 +23,7 @@ module.exports = [
         {
         image:'./image/CongNghe/kyocera.jpg',
         title:'Kyocera',
-        href:'http://www.kyocera.jp',
+        href:'http://www.kyoceramobile.com/',
         },
         {
         image:'./image/CongNghe/lenovo.jpg',
@@ -63,7 +63,7 @@ module.exports = [
         {
         image:'./image/CongNghe/docomo.jpg',
         title:'Docomo',
-        href:'http://www.docomo.jp',
+        href:'https://www.nttdocomo.co.jp/',
         },
         {
         image:'./image/CongNghe/HTC.jpg',
@@ -73,7 +73,7 @@ module.exports = [
         {
         image:'./image/CongNghe/kyocera.jpg',
         title:'Kyocera',
-        href:'http://www.kyocera.jp',
+        href:'http://www.kyoceramobile.com/',
         },
         {
         image:'./image/CongNghe/lenovo.jpg',

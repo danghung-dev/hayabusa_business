@@ -97,7 +97,84 @@ var MainView = React.createClass({
                             duration={this.state.duration}
                             layout={this.state.layout}/>
                 </div>
-               
+                <div style={{ display: 'flex', flexDirection: 'row', marginTop: 100}}>
+                    <div style={{flex:1,marginLeft: 20, marginRight: 20}}>
+                        <div style={{height: 40, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                            <h3> DỊCH VỤ </h3>
+                        </div>
+                        <div style={{marginTop: 30}}>
+                            <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Điều khoản sử dụng </p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Chính sách bảo mật </p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Giới thiệu Hayabusa </p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Hệ thống trung tâm</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div style={{flex:1,marginLeft: 20, marginRight: 20}}>
+                        <div style={{height: 40, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                            <h3> HỖ TRỢ </h3>
+                        </div>
+                         <div style={{marginTop: 30}}>
+                            <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Câu hỏi thường gặp </p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Liên hệ </p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Phương thức thanh toán </p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Hướng dẫn đặt hàng </p>
+                             </div>
+                        </div>
+                    </div>
+                    <div style={{flex:1,marginLeft: 20, marginRight: 20}}>
+                        <div style={{height: 40, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                            <h3> TÀI KHOẢN CỦA TÔI </h3>
+                        </div>
+                        <div style={{marginTop: 30}}>
+                            <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Đăng nhập/Tạo mới tài khoản </p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Thay đổi địa chỉ khách hàng </p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Chi tiết tài khoản</p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Lịch sử mua hàng </p>
+                             </div>
+                        </div>
+                    </div>
+                    <div style={{flex:1,marginLeft: 20, marginRight: 20}}>
+                        <div style={{height: 40, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                            <h3> LIÊN HỆ </h3>
+                        </div>
+                        <div style={{marginTop: 30}}>
+                            <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Phone:1900636467 </p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Email:info@hayabusa.com </p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Địa chỉ: toà nhà Mê Công, q.Tân Bình</p>
+                             </div>
+                             <div style={{height: 30, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>
+                                <p style={{marginLeft: 20}}> Tax: 0000 </p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

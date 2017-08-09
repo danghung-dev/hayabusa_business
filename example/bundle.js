@@ -188,6 +188,222 @@
 	                    ease: this.state.ease,
 	                    duration: this.state.duration,
 	                    layout: this.state.layout })
+	            ),
+	            React.createElement(
+	                'div',
+	                { style: { display: 'flex', flexDirection: 'row', marginTop: 100 } },
+	                React.createElement(
+	                    'div',
+	                    { style: { flex: 1, marginLeft: 20, marginRight: 20 } },
+	                    React.createElement(
+	                        'div',
+	                        { style: { height: 40, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                        React.createElement(
+	                            'h3',
+	                            null,
+	                            ' DỊCH VỤ '
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { style: { marginTop: 30 } },
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Điều khoản sử dụng '
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Chính sách bảo mật '
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Giới thiệu Hayabusa '
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Hệ thống trung tâm'
+	                            )
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { style: { flex: 1, marginLeft: 20, marginRight: 20 } },
+	                    React.createElement(
+	                        'div',
+	                        { style: { height: 40, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                        React.createElement(
+	                            'h3',
+	                            null,
+	                            ' HỖ TRỢ '
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { style: { marginTop: 30 } },
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Câu hỏi thường gặp '
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Liên hệ '
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Phương thức thanh toán '
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Hướng dẫn đặt hàng '
+	                            )
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { style: { flex: 1, marginLeft: 20, marginRight: 20 } },
+	                    React.createElement(
+	                        'div',
+	                        { style: { height: 40, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                        React.createElement(
+	                            'h3',
+	                            null,
+	                            ' TÀI KHOẢN CỦA TÔI '
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { style: { marginTop: 30 } },
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Đăng nhập/Tạo mới tài khoản '
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Thay đổi địa chỉ khách hàng '
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Chi tiết tài khoản'
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Lịch sử mua hàng '
+	                            )
+	                        )
+	                    )
+	                ),
+	                React.createElement(
+	                    'div',
+	                    { style: { flex: 1, marginLeft: 20, marginRight: 20 } },
+	                    React.createElement(
+	                        'div',
+	                        { style: { height: 40, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                        React.createElement(
+	                            'h3',
+	                            null,
+	                            ' LIÊN HỆ '
+	                        )
+	                    ),
+	                    React.createElement(
+	                        'div',
+	                        { style: { marginTop: 30 } },
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Phone:1900636467 '
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Email:info@hayabusa.com '
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Địa chỉ: toà nhà Mê Công, q.Tân Bình'
+	                            )
+	                        ),
+	                        React.createElement(
+	                            'div',
+	                            { style: { height: 30, borderBottom: 1, borderBottomColor: 'gray', borderBottomStyle: 'solid' } },
+	                            React.createElement(
+	                                'p',
+	                                { style: { marginLeft: 20 } },
+	                                ' Tax: 0000 '
+	                            )
+	                        )
+	                    )
+	                )
 	            )
 	        );
 	    }
@@ -752,7 +968,7 @@
 	        {
 	        image:'./image/CongNghe/docomo.jpg',
 	        title:'Docomo',
-	        href:'http://www.docomo.jp',
+	        href:'https://www.nttdocomo.co.jp/',
 	        },
 	        {
 	        image:'./image/CongNghe/HTC.jpg',
@@ -762,7 +978,7 @@
 	        {
 	        image:'./image/CongNghe/kyocera.jpg',
 	        title:'Kyocera',
-	        href:'http://www.kyocera.jp',
+	        href:'http://www.kyoceramobile.com/',
 	        },
 	        {
 	        image:'./image/CongNghe/lenovo.jpg',
@@ -802,7 +1018,7 @@
 	        {
 	        image:'./image/CongNghe/docomo.jpg',
 	        title:'Docomo',
-	        href:'http://www.docomo.jp',
+	        href:'https://www.nttdocomo.co.jp/',
 	        },
 	        {
 	        image:'./image/CongNghe/HTC.jpg',
@@ -812,7 +1028,7 @@
 	        {
 	        image:'./image/CongNghe/kyocera.jpg',
 	        title:'Kyocera',
-	        href:'http://www.kyocera.jp',
+	        href:'http://www.kyoceramobile.com/',
 	        },
 	        {
 	        image:'./image/CongNghe/lenovo.jpg',

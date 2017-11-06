@@ -4,7 +4,6 @@
   "description": "Example for a 3D carousel written in react",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot",
     "build": "webpack"
   },
   "keywords": [

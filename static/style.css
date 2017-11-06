@@ -1,3 +1,6 @@
+/*
+  chỉnh width 
+*/
 .react-3d-carousel {
     width: 400px;
     height: 300px;
@@ -12,6 +15,9 @@
     transform-style: preserve-3d;
 }
 
+/*
+  chỉnh width 
+*/
 .react-3d-carousel .carousel  figure {
     display: block;
     position: absolute;
@@ -31,6 +37,9 @@
     background: hsla( 160, 100%, 50%, 0.8);
 }
 
+/*
+  chỉnh width 
+*/
 #content table {
     position: absolute;
     top: 400px;

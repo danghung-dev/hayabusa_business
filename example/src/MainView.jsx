@@ -2,13 +2,15 @@ var Carousel = require('react-3d-carousel');
 var Ease = require('ease-functions');
 var data = require('./data');
 var setting = require('./setting');
+var MyCarousel = require('./MyCarousel');
 var MainView = React.createClass({
     getInitialState: function () {
         return {
             images: this.getImagesFromData(data[0].company),
             href: this.getHrefFromData(data[0].company),
             text: this.getTitleFromData(data[0].company),
-            width: setting.imageWidth,
+            mdWidth: setting.mdWidth,
+            xsWidth: setting.xsWidth,
             layout: 'prism',
             ease: 'linear',
             duration: setting.rotateDurarota,
@@ -87,16 +89,39 @@ var MainView = React.createClass({
                         <option value="3">Default</option>
                     </select>
                 </div>
-                <div style={{marginTop: 50, width: '100%',display: 'flex',alignContent: 'center', justifyContent:'center' }}>
-                    <Carousel 
-                            width={this.state.width}
-                            images={this.state.images}
-                            href={this.state.href}
-                            text={this.state.text}
-                            ease={this.state.ease}
-                            duration={this.state.duration}
-                            layout={this.state.layout}/>
-                </div>
+                <MyCarousel 
+                    className="xs-carousel"
+                    style={{marginTop: 50, width: '100%',display: 'flex',alignContent: 'center', justifyContent:'center' }}
+                    width={this.state.xsWidth}
+                    images={this.state.images}
+                    href={this.state.href}
+                    text={this.state.text}
+                    ease={this.state.ease}
+                    duration={this.state.duration}
+                    layout={this.state.layout}
+                />
+                <MyCarousel 
+                    className="xs-carousel"
+                    style={{marginTop: 50, width: '100%',display: 'flex',alignContent: 'center', justifyContent:'center' }}
+                    width={this.state.xsWidth}
+                    images={this.state.images}
+                    href={this.state.href}
+                    text={this.state.text}
+                    ease={this.state.ease}
+                    duration={this.state.duration}
+                    layout={this.state.layout}
+                />
+                <MyCarousel 
+                    className="md-carousel"
+                    style={{marginTop: 50, width: '100%',display: 'flex',alignContent: 'center', justifyContent:'center' }}
+                    width={this.state.mdWidth}
+                    images={this.state.images}
+                    href={this.state.href}
+                    text={this.state.text}
+                    ease={this.state.ease}
+                    duration={this.state.duration}
+                    layout={this.state.layout}
+                />
                 <div style={{ display: 'flex', flexDirection: 'row', marginTop: 100}}>
                     <div style={{flex:1,marginLeft: 20, marginRight: 20}}>
                         <div style={{height: 40, borderBottom:1, borderBottomColor: 'gray', borderBottomStyle: 'solid'}}>

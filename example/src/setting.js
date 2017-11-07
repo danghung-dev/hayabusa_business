@@ -1,5 +1,9 @@
 module.exports = {
   imageNumber: 15,
-  imageWidth: '400', // cann't change this props (no support)
+  /*
+    chỉnh width 
+  */
+  mdWidth: '550', 
+  xsWidth: '250',
   rotateDurarota:800,
 };

@@ -4,7 +4,8 @@ var createReactClass = require('create-react-class');
 var Util = require('./util');
 var Layout = require('./layout');
 var Depot = require('./depot');
-
+var rightImage = require('./../img/right.png');
+var leftImage = require('./../img/left.png');
 var Carousel = createReactClass({
     displayName: 'Carousel',
     getInitialState: function getInitialState() {
@@ -50,8 +51,8 @@ var Carousel = createReactClass({
                     style: { transform: 'translateZ(' + translateZ + 'px)' } },
                 figures
             ),
-            React.createElement('div', { className: 'prev', onClick: Util.partial(this.onRotate, +angle), style:{position: 'absolute', top: sef.state.height/2 + 50, left: '50px', width: 43, height: 49,zIndex: 100000 } }),
-            React.createElement('div', { className: 'next', onClick: Util.partial(this.onRotate, -angle), style:{position: 'absolute', top: sef.state.height/2 + 50 , left: sef.state.width-50 +'px', width: 43, height: 49, zIndex: 100000} })
+            React.createElement('img', { src: leftImage, className: 'prev', onClick: Util.partial(this.onRotate, -angle), style:{position: 'absolute', top: sef.state.height/2 + 50, left: '50px', width: '43px', height: '49px',zIndex: 100000 } }),
+            React.createElement('img', { src: rightImage, className: 'next', onClick: Util.partial(this.onRotate, +angle), style:{ position: 'absolute', top: sef.state.height/2 + 50 , left: sef.state.width +'px', width: '43px', height: '49px', zIndex: 100000} })
         );
     }
 });

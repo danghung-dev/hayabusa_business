@@ -72,15 +72,12 @@ export default class Example extends React.Component {
     return (
       <div style={{ width: "100%" }}>
         <MyCarousel
-          className="xs-carousel"
           style={{
             marginTop: 50,
-            width: "100%",
-            display: "flex",
-            alignContent: "center",
-            justifyContent: "center"
+            marginLeft: 300,
+            marginRight: 300,
           }}
-          width= "600"
+          width= "400"
           height= "200"
           images={this.state.images}
           href={this.state.href}

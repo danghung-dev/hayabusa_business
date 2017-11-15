@@ -1,3 +1,4 @@
+
 .react-3d-carousel {
     height: 300px;
     position: relative;
@@ -30,15 +31,4 @@
 }
 
 .react-3d-carousel   .prev {
-}
-
- .react-3d-carousel   .prev:before {
-    content: url("http://s3.postimg.org/o6xpvkidb/chevron_left_white.png");
-}
-
-.react-3d-carousel  .next {
-}
-.react-3d-carousel  .next:before
-{
-    content: url("http://s3.postimg.org/o6xpvkidb/chevron_left_white.png");
 }

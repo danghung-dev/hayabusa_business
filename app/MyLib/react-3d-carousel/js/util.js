@@ -22,6 +22,7 @@ _exports.figureStyle = function figureStyle(d, wid, heig) {
 };
 
 _exports.partial = function partial(func) {
+  // alert()
   const args = Array.prototype.slice.call(arguments, 1);
   return function () {
     return func.apply(

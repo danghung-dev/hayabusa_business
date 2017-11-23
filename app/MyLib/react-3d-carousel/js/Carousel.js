@@ -9,6 +9,7 @@ const Carousel = createReactClass({
   displayName: 'Carousel',
   getInitialState: function getInitialState() {
     return {
+      count: 0,
       images: this.props.images,
       text: this.props.text,
       href: this.props.href,
@@ -29,6 +30,11 @@ const Carousel = createReactClass({
       this.setState.bind(this)
     );
     this.onRotate = this.depot.onRotate.bind(this);
+    const angle = (2 * Math.PI) / this.state.figures.length;
+    const autoRotateTime = this.props.autoRotateTime ? this.props.autoRotateTime: 3000;
+    if ( this.props.auto ) {
+      setInterval( Util.partial(this.onRotate, angle), autoRotateTime);
+    }
   },
   componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
     this.depot.onNextProps(nextProps);

@@ -120,6 +120,8 @@ export class HomePage extends React.Component {
           ease={this.state.ease}
           duration={this.state.duration}
           layout={this.state.layout}
+          auto={true}
+          autoRotateTime={1500}
         />
       </div>
     );

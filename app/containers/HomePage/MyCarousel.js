@@ -14,6 +14,8 @@ const MyCarousel = createReactClass({
           ease={this.props.ease}
           duration={this.props.duration}
           layout={this.props.layout}
+          auto={this.props.auto}
+          autoRotateTime={this.props.autoRotateTime}
         />
       </div>
     );

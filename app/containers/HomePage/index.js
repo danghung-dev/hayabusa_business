@@ -3,7 +3,7 @@
  * HomePage
  *
  */
- import GoogleImages from 'google-images';
+import GoogleImages from 'google-images';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -17,15 +17,15 @@ import reducer from './reducer';
 import saga from './saga';
 import setting from './setting';
 import MyCarousel from './MyCarousel';
-import data from './data';
+import Data from './data';
 import './style.css';
 export class HomePage extends React.Component {
   constructor() {
     super();
     this.state = {
-      images: this.getImagesFromData(data[3].company),
-      href: this.getHrefFromData(data[0].company),
-      text: this.getTitleFromData(data[0].company),
+      images: this.getImagesFromData(Data[3].company),
+      href: this.getHrefFromData(Data[0].company),
+      text: this.getTitleFromData(Data[0].company),
       layout: 'prism',
       ease: 'linear',
       duration: setting.rotateDurarota,
@@ -59,7 +59,7 @@ export class HomePage extends React.Component {
   getImagesFromData(data) {
     let result = [];
     if (data.length > 0) {
-      data.map((item, index) => {
+      data.map((item) => {
         result.push(item.image);
       });
     }
@@ -69,7 +69,7 @@ export class HomePage extends React.Component {
   getHrefFromData(data) {
     let result = [];
     if (data.length > 0) {
-      data.map((item, index) => {
+      data.map((item) => {
         result.push(item.href);
       });
     }
@@ -79,7 +79,7 @@ export class HomePage extends React.Component {
   getTitleFromData(data) {
     const result = [];
     if (data.length > 0) {
-      data.map((item, index) => {
+      data.map((item) => {
         result.push(item.title);
       });
     }
@@ -96,15 +96,24 @@ export class HomePage extends React.Component {
   render() {
     return (
       <div style={{ width: '100%' }}>
-        <input style={{ marginTop: 50, width: 200, height: 30 , border: '1px solid gray'}} type="text" name="name" />
+        <input
+          style={{
+            marginTop: 50,
+            width: 200,
+            height: 30,
+            border: '1px solid gray',
+          }}
+          type="text"
+          name="name"
+        />
         <MyCarousel
           style={{
             marginTop: 50,
             marginLeft: 100,
             marginRight: 100,
           }}
-          width="100"
-          height="50"
+          width="150"
+          height="60"
           images={this.state.images}
           href={this.state.href}
           text={this.state.text}

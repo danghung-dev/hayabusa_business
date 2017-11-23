@@ -94,10 +94,15 @@ const Carousel = createReactClass({
         onClick: Util.partial(this.onRotate, -angle),
         style: {
           position: 'absolute',
-          top: `${parseInt(sef.state.height / 2 + 49, 10)}px`,
+          top: `${parseInt(((
+            sef.state.height / 2) -
+              parseInt(sef.state.width / 10, 10)) +
+              (55),
+            10
+          )}px`,
           left: '50px',
-          width: `${parseInt(sef.state.width / 200 * 43, 10)}px`,
-          height: `${parseInt(sef.state.height / 200 * 49, 10)}px`,
+          width: `${parseInt(sef.state.width / 9, 10)}px`,
+          height: `${parseInt(sef.state.width / 9, 10)}px`,
           zIndex: 100000,
         },
       }),
@@ -107,10 +112,15 @@ const Carousel = createReactClass({
         onClick: Util.partial(this.onRotate, +angle),
         style: {
           position: 'absolute',
-          top: parseInt(sef.state.height / 2 + 49, 10),
-          left: `${sef.state.width}px`,
-          width: `${parseInt(sef.state.width / 200 * 43, 10)}px`,
-          height: `${parseInt(sef.state.height / 200 * 49, 10)}px`,
+          top: parseInt(
+            ((sef.state.height / 2) -
+              parseInt(sef.state.width / 10, 10)) +
+              (55),
+            10
+          ),
+          left: `${parseInt((sef.state.width - (sef.state.width / 9)) + 30, 10)}px`,
+          width: `${parseInt(sef.state.width / 9, 10)}px`,
+          height: `${parseInt(sef.state.width / 9, 10)}px`,
           zIndex: 100000,
         },
       })

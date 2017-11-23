@@ -1,8 +1,8 @@
-var React = require("react");
-var Carousel = require("MyLib/react-3d-carousel/js/Carousel");
-var createReactClass = require("create-react-class");
-var MyCarousel = createReactClass({
-  render: function() {
+const React = require('react');
+const Carousel = require('MyLib/react-3d-carousel/js/Carousel');
+const createReactClass = require('create-react-class');
+const MyCarousel = createReactClass({
+  render() {
     return (
       <div className={this.props.className} style={this.props.style}>
         <Carousel
@@ -17,6 +17,6 @@ var MyCarousel = createReactClass({
         />
       </div>
     );
-  }
+  },
 });
 module.exports = MyCarousel;

@@ -2,6 +2,7 @@ import React from "react";
 import setting from "./setting";
 import MyCarousel from "./MyCarousel";
 import data from "./data";
+import './style.css';
 export default class Example extends React.Component {
   constructor() {
     super();
@@ -73,18 +74,18 @@ export default class Example extends React.Component {
       <div style={{ width: "100%" }}>
         <MyCarousel
           style={{
-            marginTop: 50,
             marginLeft: 300,
-            marginRight: 300,
           }}
-          width= "400"
-          height= "200"
+          width= "140"
+          height= "70"
           images={this.state.images}
           href={this.state.href}
           text={this.state.text}
           ease={this.state.ease}
           duration={this.state.duration}
           layout={this.state.layout}
+          auto={true}
+          autoRotateTime={1500}
         />
       </div>
     );

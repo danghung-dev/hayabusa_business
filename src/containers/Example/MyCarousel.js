@@ -4,11 +4,12 @@ var createReactClass = require('create-react-class');
 var MyCarousel = createReactClass({
   render: function() {
     return (
-      <div className={this.props.className} style={this.props.style}>
+      <div key={this.props.key3D} className={this.props.className} style={this.props.style}>
         <Carousel
           width={this.props.width}
           height={this.props.height}
           images={this.props.images}
+          key3D={this.props.key3D}
           href={this.props.href}
           text={this.props.text}
           ease={this.props.ease}

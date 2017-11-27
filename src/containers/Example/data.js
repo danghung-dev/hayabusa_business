@@ -319,106 +319,41 @@ module.exports = [
       company:
       [
         {
-        image:'http://s7.postimg.org/dbamgegu3/zen8.jpg',
+        image:'./img/1.jpg',
         title:'Apple',
         href:'http://www.google.com',
         },
         {
-        image:'http://s21.postimg.org/er8b066p3/zen2.jpg',
+        image:'./img/2.jpg',
         title:'Apple',
         href:'http://www.google.com',
         },
         {
-        image:'http://s4.postimg.org/6mbbcgmwd/zen1.jpg',
+        image:'./img/3.jpg',
         title:'Apple',
         href:'http://www.google.com',
         },
         {
-        image:'http://s30.postimg.org/x3cgpdtgx/zen3.jpg',
+        image:'./img/4.jpg',
         title:'Apple',
         href:'http://www.google.com',
         },
         {
-        image:'http://s21.postimg.org/h1estw95z/zen4.jpg',
+        image:'./img/5.jpg',
         title:'Apple',
         href:'http://www.google.com',
         },
         {
-        image:'http://s8.postimg.org/upypfrk8l/zen5.jpg',
+        image:'./img/6.jpg',
         title:'Apple',
         href:'http://www.google.com',
         },
         {
-        image:'http://s30.postimg.org/n9zuqbgq9/zen7.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-        {
-        image:'http://s12.postimg.org/9kw5b42d9/zen9.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-        {
-        image:'http://s13.postimg.org/vwf92qbl3/zen10.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-         {
-        image:'http://s7.postimg.org/dbamgegu3/zen8.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-        {
-        image:'http://s21.postimg.org/er8b066p3/zen2.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-        {
-        image:'http://s4.postimg.org/6mbbcgmwd/zen1.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-        {
-        image:'http://s30.postimg.org/x3cgpdtgx/zen3.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-        {
-        image:'http://s21.postimg.org/h1estw95z/zen4.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-        {
-        image:'http://s8.postimg.org/upypfrk8l/zen5.jpg',
+        image:'./img/7.jpg',
         title:'Apple',
         href:'http://www.google.com',
         },
       
-        {
-        image:'http://s30.postimg.org/n9zuqbgq9/zen7.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-        {
-        image:'http://s12.postimg.org/9kw5b42d9/zen9.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-        {
-        image:'http://s13.postimg.org/vwf92qbl3/zen10.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-      {
-        image:'http://s21.postimg.org/er8b066p3/zen2.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
-        {
-        image:'http://s4.postimg.org/6mbbcgmwd/zen1.jpg',
-        title:'Apple',
-        href:'http://www.google.com',
-        },
       ],
     },
 ];

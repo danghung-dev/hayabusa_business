@@ -1,15 +1,15 @@
 import React from "react";
 import setting from "./setting";
-import MyCarousel from "./MyCarousel";
 import data from "./data";
+import Carousel from "../../MyLib/react-3d-carousel-video/js/Carousel";
 import "./style.css";
 export default class Example extends React.Component {
   constructor() {
     super();
     this.state = {
       images: this.getImagesFromData(data[3].company),
-      href: this.getHrefFromData(data[0].company),
-      text: this.getTitleFromData(data[0].company),
+      href: this.getHrefFromData(data[3].company),
+      text: this.getTitleFromData(data[3].company),
       layout: "prism",
       ease: "linear",
       duration: setting.rotateDurarota
@@ -76,31 +76,8 @@ export default class Example extends React.Component {
         <div style= {{ width: '100%', height: 100,textAlign: 'center', fontSize: 30, color: 'red' }}>
           CÔNG TY HAYZBUSA
         </div>
-        <div>
-          <MyCarousel
-            style={{
-              marginLeft: 500
-            }}
-            key3D="abc"
-            width="100"
-            height="50"
-            images={this.state.images}
-            href={this.state.href}
-            text={this.state.text}
-            ease={this.state.ease}
-            duration={this.state.duration}
-            layout={this.state.layout}
-            auto={false}
-            autoRotateTime={1500}
-          />
-        </div>
-        <div style={{height: 100, width: '100%' }}>
-        </div>
-        <div>
-          <MyCarousel
-            style={{
-              marginLeft: 400
-            }}
+        <div style={{marginLeft: 300}}>
+          <Carousel
             key3D="aabcd"
             width="400"
             height="200"
@@ -110,14 +87,9 @@ export default class Example extends React.Component {
             ease={this.state.ease}
             duration={this.state.duration}
             layout={this.state.layout}
-            auto={true}
+            auto={false}
             autoRotateTime={1500}
           />
-        </div>
-        <div style={{height: 500, width: '100%' }}>
-        </div>
-        <div style={{textAlign: 'center', width: '100%'}}>
-          <a href="/video"> Video</a>
         </div>
       </div>
     );

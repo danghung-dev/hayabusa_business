@@ -2,7 +2,7 @@ import React from "react";
 import setting from "./setting";
 import data from "./data";
 import Carousel from "../../MyLib/react-3d-carousel-video/js/Carousel";
-import logo from '../../img/logo.png';
+import logo from "../../img/logo.png";
 import "./style.css";
 export default class Example extends React.Component {
   constructor() {
@@ -74,15 +74,43 @@ export default class Example extends React.Component {
     return (
       <div style={{ width: "100%" }}>
         <img style={{ margin: 20 }} src={logo} height="30" width="130" />
-        <div style= {{ width: '100%', height: 100,textAlign: 'center', fontSize: 30, color: 'red' }}>
+        <div
+          style={{
+            width: "100%",
+            height: 100,
+            textAlign: "center",
+            fontSize: 30,
+            color: "red"
+          }}
+        >
           CÔNG TY HAYZBUSA
         </div>
-        <div style={{ width: '100%'}}>
-          <div style={{width: 400, margin: 'auto'}} >
+        <div
+          style={{
+            marginTop: 20,
+            width: "100%",
+            display: "flex",
+            alignContent: "center",
+            justifyContent: "center"
+          }}
+        >
+          <span style={{ marginTop: 5 }}> Chọn ngành nghề : </span>
+          <select
+            style={{ marginLeft: 20, height: 30, width: 500 }}
+            onChange={this.handleChange}
+          >
+            <option value="0">Công Nghệ</option>
+            <option value="1">Mỹ Phẩm</option>
+            <option value="2">Nước Uống</option>
+            <option value="3">Default</option>
+          </select>
+        </div>
+        <div style={{ width: "100%", marginTop: 100 }}>
+          <div style={{ width: 400, margin: "auto" }}>
             <Carousel
               key3D="aabcd"
-              width="400"
-              height="200"
+              width={400}
+              height={200}
               images={this.state.images}
               href={this.state.href}
               text={this.state.text}
@@ -93,6 +121,9 @@ export default class Example extends React.Component {
               autoRotateTime={1500}
             />
           </div>
+        </div>
+        <div style={{textAlign: 'center', width: '100%', marginTop: 500}} >
+          <a href="/"> image</a>
         </div>
       </div>
     );

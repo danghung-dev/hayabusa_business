@@ -2,7 +2,7 @@ import React from "react";
 import setting from "./setting";
 import MyCarousel from "./MyCarousel";
 import data from "./data";
-import logo from '../../img/logo.png';
+import logo from "../../img/logo.png";
 import "./style.css";
 export default class Example extends React.Component {
   constructor() {
@@ -74,10 +74,38 @@ export default class Example extends React.Component {
     return (
       <div style={{ width: "100%" }}>
         <img style={{ margin: 20 }} src={logo} height="30" width="130" />
-        <div style= {{ width: '100%', height: 100,textAlign: 'center', fontSize: 30, color: 'red' }}>
+        <div
+          style={{
+            width: "100%",
+            height: 100,
+            textAlign: "center",
+            fontSize: 30,
+            color: "red"
+          }}
+        >
           CÔNG TY HAYZBUSA
         </div>
-        <div>
+        <div
+          style={{
+            marginTop: 20,
+            width: "100%",
+            display: "flex",
+            alignContent: "center",
+            justifyContent: "center"
+          }}
+        >
+          <span style={{ marginTop: 5 }}> Chọn ngành nghề : </span>
+          <select
+            style={{ marginLeft: 20, height: 30, width: 500 }}
+            onChange={this.handleChange}
+          >
+            <option value="0">Công Nghệ</option>
+            <option value="1">Mỹ Phẩm</option>
+            <option value="2">Nước Uống</option>
+            <option value="3">Default</option>
+          </select>
+        </div>
+        <div style={{ width: '100%', marginTop: 50 }}>
           <MyCarousel
             style={{
               marginLeft: 500
@@ -95,8 +123,7 @@ export default class Example extends React.Component {
             autoRotateTime={1500}
           />
         </div>
-        <div style={{height: 100, width: '100%' }}>
-        </div>
+        <div style={{ height: 100, width: "100%" }} />
         <div>
           <MyCarousel
             style={{
@@ -115,9 +142,8 @@ export default class Example extends React.Component {
             autoRotateTime={1500}
           />
         </div>
-        <div style={{height: 500, width: '100%' }}>
-        </div>
-        <div style={{textAlign: 'center', width: '100%'}}>
+        <div style={{ height: 300, width: "100%" }} />
+        <div style={{ textAlign: "center", width: "100%" }}>
           <a href="/video"> Video</a>
         </div>
       </div>

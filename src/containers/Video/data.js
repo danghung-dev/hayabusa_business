@@ -1,46 +1,215 @@
 // Sample images used in the demo
 module.exports = [
   {
-       id:'0',
+    id:'0',
+    branch: 'default',
+    company:
+    [
+      {
+      image:'./../video/video1/5.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/2.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/3.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/4.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/5.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/5.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/2.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+    
+    ],
+  },
+  {
+    id:'1',
+    branch: 'default',
+    company:
+    [
+      {
+      image:'./../video/video1/5.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/2.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/3.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/4.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/5.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/5.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+      {
+      image:'./../video/video1/2.mp4',
+      title:'Apple',
+      href:'http://www.google.com',
+      },
+    
+    ],
+  },
+  {
+       id:'2',
        branch: 'default',
        company:
        [
          {
-         image:'./../video/5.mp4',
+         image:'./../video/video1/5.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/2.mp4',
+         image:'./../video/video1/2.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/3.mp4',
+         image:'./../video/video1/3.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/4.mp4',
+         image:'./../video/video1/4.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/5.mp4',
+         image:'./../video/video1/5.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/5.mp4',
+         image:'./../video/video1/5.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/2.mp4',
+         image:'./../video/video1/2.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
-       
        ],
      },
+     {
+      id:'3',
+      branch: 'default',
+      company:
+      [
+        {
+        image:'./../video/video1/5.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/2.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/3.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/4.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/5.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/5.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/2.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+      ],
+    },
+    {
+      id:'4',
+      branch: 'default',
+      company:
+      [
+        {
+        image:'./../video/video1/5.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/2.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/3.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/4.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/5.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/5.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+        {
+        image:'./../video/video1/2.mp4',
+        title:'Apple',
+        href:'http://www.google.com',
+        },
+      ],
+    },
  ];

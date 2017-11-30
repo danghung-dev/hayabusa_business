@@ -3,7 +3,6 @@ const createReactClass = require("create-react-class");
 const Util = require("./util");
 const Layout = require("./layout");
 const Depot = require("./depot");
-const $ = require("jquery");
 const rightImage = require("./../img/right.png");
 const leftImage = require("./../img/left.png");
 const Carousel = createReactClass({
@@ -77,7 +76,7 @@ const Carousel = createReactClass({
                 controls: true,
                 id:"myvideo",
                 style: {
-                  'object-fit':'cover',
+                  objectFit:'cover',
                 }
                 
               },

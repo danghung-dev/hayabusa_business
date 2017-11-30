@@ -7,9 +7,9 @@ export default class Example extends React.Component {
   constructor() {
     super();
     this.state = {
-      images: this.getImagesFromData(data[3].company),
-      href: this.getHrefFromData(data[3].company),
-      text: this.getTitleFromData(data[3].company),
+      images: this.getImagesFromData(data[0].company),
+      href: this.getHrefFromData(data[0].company),
+      text: this.getTitleFromData(data[0].company),
       layout: "prism",
       ease: "linear",
       duration: setting.rotateDurarota

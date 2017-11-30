@@ -48,6 +48,7 @@ const Carousel = createReactClass({
       this.state.figures.length
     );
     const sef = this;
+    const autoplay = sef.props.autoplay? true: false;
     // alert(sef.props.key)
     const figures = this.state.figures.map((d, i) =>
       React.createElement(
@@ -74,6 +75,7 @@ const Carousel = createReactClass({
                 key: "video" + i,
                 width: `${sef.state.width}px`,
                 controls: true,
+                autoPlay: autoplay,
                 id:"myvideo",
                 style: {
                   objectFit:'cover',

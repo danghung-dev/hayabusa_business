@@ -2,6 +2,7 @@ import React from "react";
 import setting from "./setting";
 import data from "./data";
 import Carousel from "../../MyLib/react-3d-carousel-video/js/Carousel";
+import logo from '../../img/logo.png';
 import "./style.css";
 export default class Example extends React.Component {
   constructor() {
@@ -72,24 +73,26 @@ export default class Example extends React.Component {
   render() {
     return (
       <div style={{ width: "100%" }}>
-        <img style={{ margin: 20 }} src="./logo.png" height="30" width="130" />
+        <img style={{ margin: 20 }} src={logo} height="30" width="130" />
         <div style= {{ width: '100%', height: 100,textAlign: 'center', fontSize: 30, color: 'red' }}>
           CÔNG TY HAYZBUSA
         </div>
-        <div style={{marginLeft: 300}}>
-          <Carousel
-            key3D="aabcd"
-            width="400"
-            height="200"
-            images={this.state.images}
-            href={this.state.href}
-            text={this.state.text}
-            ease={this.state.ease}
-            duration={this.state.duration}
-            layout={this.state.layout}
-            auto={false}
-            autoRotateTime={1500}
-          />
+        <div style={{ width: '100%'}}>
+          <div style={{width: 400, margin: 'auto'}} >
+            <Carousel
+              key3D="aabcd"
+              width="400"
+              height="200"
+              images={this.state.images}
+              href={this.state.href}
+              text={this.state.text}
+              ease={this.state.ease}
+              duration={this.state.duration}
+              layout={this.state.layout}
+              auto={false}
+              autoRotateTime={1500}
+            />
+          </div>
         </div>
       </div>
     );

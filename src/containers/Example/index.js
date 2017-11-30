@@ -2,6 +2,7 @@ import React from "react";
 import setting from "./setting";
 import MyCarousel from "./MyCarousel";
 import data from "./data";
+import logo from '../../img/logo.png';
 import "./style.css";
 export default class Example extends React.Component {
   constructor() {
@@ -72,7 +73,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div style={{ width: "100%" }}>
-        <img style={{ margin: 20 }} src="./logo.png" height="30" width="130" />
+        <img style={{ margin: 20 }} src={logo} height="30" width="130" />
         <div style= {{ width: '100%', height: 100,textAlign: 'center', fontSize: 30, color: 'red' }}>
           CÔNG TY HAYZBUSA
         </div>

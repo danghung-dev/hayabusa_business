@@ -3,6 +3,7 @@ import setting from "./setting";
 import data from "./data";
 import Carousel from "../../MyLib/react-3d-carousel-video/js/Carousel";
 import logo from "../../img/logo.png";
+import { Link } from 'react-router-dom'
 import "./style.css";
 export default class Example extends React.Component {
   constructor() {
@@ -77,7 +78,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div style={{ width: "100%" }}>
-        <img style={{ margin: 20 }} src={logo} height="30" width="130" />
+        <img style={{ margin: 20 }} src='./logo.png' height="30" width="130" />
         <div
           style={{
             width: "100%",
@@ -87,7 +88,7 @@ export default class Example extends React.Component {
             color: "red"
           }}
         >
-          CÔNG TY HAYZBUSA
+          ハヤブサ広告システム
         </div>
         <div
           style={{
@@ -110,11 +111,11 @@ export default class Example extends React.Component {
           </select>
         </div>
         <div style={{ width: "100%", marginTop: 100 }}>
-          <div style={{ width: 400, margin: "auto" }}>
+          <div style={{ width: 640, margin: "auto" }}>
             <Carousel
               key3D="aabcd"
-              width={400}
-              height={200}
+              width={640}
+              height={360}
               images={this.state.images}
               href={this.state.href}
               text={this.state.text}
@@ -123,12 +124,12 @@ export default class Example extends React.Component {
               layout={this.state.layout}
               auto={false}
               autoRotateTime={1500}
-              autoplay={false}
+              autoplay={true}
             />
           </div>
         </div>
         <div style={{textAlign: 'center', width: '100%', marginTop: 500}} >
-          <a href="/"> image</a>
+        <Link to="/image">Image</Link>
         </div>
       </div>
     );

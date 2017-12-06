@@ -3,6 +3,7 @@ import setting from "./setting";
 import MyCarousel from "./MyCarousel";
 import data from "./data";
 import logo from "../../img/logo.png";
+import { Link } from 'react-router-dom'
 import "./style.css";
 export default class Example extends React.Component {
   constructor() {
@@ -73,7 +74,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <div style={{ width: "100%" }}>
-        <img style={{ margin: 20 }} src={logo} height="30" width="130" />
+        <img style={{ margin: 20 }} src='./logo.png' height="30" width="130" />
         <div
           style={{
             width: "100%",
@@ -83,7 +84,7 @@ export default class Example extends React.Component {
             color: "red"
           }}
         >
-          CÔNG TY HAYZBUSA
+          ハヤブサ広告システム
         </div>
         <div
           style={{
@@ -105,24 +106,7 @@ export default class Example extends React.Component {
             <option value="3">Default</option>
           </select>
         </div>
-        <div style={{ width: '100%', marginTop: 50 }}>
-          <MyCarousel
-            style={{
-              marginLeft: 500
-            }}
-            key3D="abc"
-            width="100"
-            height="50"
-            images={this.state.images}
-            href={this.state.href}
-            text={this.state.text}
-            ease={this.state.ease}
-            duration={this.state.duration}
-            layout={this.state.layout}
-            auto={false}
-            autoRotateTime={1500}
-          />
-        </div>
+        
         <div style={{ height: 100, width: "100%" }} />
         <div>
           <MyCarousel
@@ -144,7 +128,7 @@ export default class Example extends React.Component {
         </div>
         <div style={{ height: 300, width: "100%" }} />
         <div style={{ textAlign: "center", width: "100%" }}>
-          <a href="/video"> Video</a>
+        <Link to="/">Video</Link>
         </div>
       </div>
     );

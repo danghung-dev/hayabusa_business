@@ -4,9 +4,9 @@ import { connect, Provider } from 'react-redux'
 import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux'
 
 import { createStore, applyMiddleware } from 'redux'
-import createHistory from 'history/createBrowserHistory'
+import createHistory from 'history/createHashHistory'
 
-import { Link } from 'react-router-dom'
+import { Link,HashRouter } from 'react-router-dom'
 import { Route, Switch } from 'react-router'
 
 import Example from './containers/Example';
@@ -23,10 +23,12 @@ const ConnectedSwitch = connect(state => ({
 }))(Switch)
 
 const AppContainer = () => (
+  <HashRouter>
   <ConnectedSwitch>
-    <Route exact path="/" component={Example} />
-    <Route path="/video" component={Video} />
+    <Route path="/image" component={Example} />
+    <Route path="/" component={Video} />
   </ConnectedSwitch>
+  </HashRouter>
 )
 
 const App = connect(state => ({

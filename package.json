@@ -17,6 +17,7 @@
     "redux": "^3.7.2"
   },
   "scripts": {
+    "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -24,12 +25,20 @@
     "lint": "jshint .",
     "validate": "npm ls"
   },
+  "lint-staged": {
+    "*.{js,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "pre-commit": [
-    "lint",
+    
     "validate",
     "test"
   ],
   "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^5.0.0",
     "precommit-hook": "^3.0.0"
   }
 }

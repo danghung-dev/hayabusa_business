@@ -6,41 +6,40 @@ module.exports = [
     company:
     [
       {
-      image:'./../video/video1/5.mp4',
+      image:'./../video/fukoidan/1.mp4',
+      title:'Kanehide Bio',
+      href:'http://www.kanehide-bio.co.jp/',
+      },
+      {
+        image:'./../video/fukoidan/1.mp4',
+        title:'Kanehide Bio',
+        href:'http://www.kanehide-bio.co.jp/',
+        },
+      {
+      image:'./../video/fukoidan/3.mp4',
       title:'Apple',
       href:'http://www.google.com',
       },
       {
-      image:'./../video/video1/2.mp4',
+      image:'./../video/fukoidan/4.mp4',
       title:'Apple',
       href:'http://www.google.com',
       },
       {
-      image:'./../video/video1/3.mp4',
+      image:'./../video/fukoidan/5.mp4',
       title:'Apple',
       href:'http://www.google.com',
       },
       {
-      image:'./../video/video1/4.mp4',
+      image:'./../video/fukoidan/1.mp4',
       title:'Apple',
       href:'http://www.google.com',
       },
       {
-      image:'./../video/video1/5.mp4',
+      image:'./../video/fukoidan/2.mp4',
       title:'Apple',
       href:'http://www.google.com',
       },
-      {
-      image:'./../video/video1/5.mp4',
-      title:'Apple',
-      href:'http://www.google.com',
-      },
-      {
-      image:'./../video/video1/2.mp4',
-      title:'Apple',
-      href:'http://www.google.com',
-      },
-    
     ],
   },
   {
@@ -92,37 +91,37 @@ module.exports = [
        company:
        [
          {
-         image:'./../video/video1/5.mp4',
+         image:'./../video/fukoidan/1.mp4',
+         title:'Kanehide Bio',
+         href:'http://www.kanehide-bio.co.jp/',
+         },
+         {
+         image:'./../video/fukoidan/2.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/video1/2.mp4',
+         image:'./../video/fukoidan/3.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/video1/3.mp4',
+         image:'./../video/fukoidan/4.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/video1/4.mp4',
+         image:'./../video/fukoidan/5.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/video1/5.mp4',
+         image:'./../video/fukoidan/5.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },
          {
-         image:'./../video/video1/5.mp4',
-         title:'Apple',
-         href:'http://www.google.com',
-         },
-         {
-         image:'./../video/video1/2.mp4',
+         image:'./../video/fukoidan/2.mp4',
          title:'Apple',
          href:'http://www.google.com',
          },

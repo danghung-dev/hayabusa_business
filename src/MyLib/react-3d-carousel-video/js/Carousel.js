@@ -79,8 +79,7 @@ const Carousel = createReactClass({
                 id:"myvideo",
                 style: {
                   objectFit:'cover',
-                }
-                
+                }               
               },
               [
                 React.createElement(

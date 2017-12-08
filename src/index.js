@@ -1,43 +1,51 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { connect, Provider } from 'react-redux'
-import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux'
+import React from "react";
+import ReactDOM from "react-dom";
 
-import { createStore, applyMiddleware } from 'redux'
-import createHistory from 'history/createBrowserHistory'
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
 
-import { Link } from 'react-router-dom'
-import { Route, Switch } from 'react-router'
+import createHistory from "history/createBrowserHistory";
+import { Route } from "react-router";
 
-import Example from './containers/Example';
-import Video from './containers/Video';
-const history = createHistory()
-
-const store = createStore(
+import {
+  ConnectedRouter,
   routerReducer,
-  applyMiddleware(routerMiddleware(history)),
-)
+  routerMiddleware,
+  push
+} from "react-router-redux";
 
-const ConnectedSwitch = connect(state => ({
-  location: state.location
-}))(Switch)
+import Example from "./containers/Example";
+import Video from "./containers/Video";
+import HomePage from "./containers/HomePage";
+import Register from "./containers/Register";
+import MyReducers from "./Reducers";
 
-const AppContainer = () => (
-  <ConnectedSwitch>
-    <Route exact path="/" component={Example} />
-    <Route path="/video" component={Video} />
-  </ConnectedSwitch>
-)
+// Create a history of your choosing (we're using a browser history in this case)
+const history = createHistory();
 
-const App = connect(state => ({
-  location: state.location,
-}))(AppContainer)
+// Build the middleware for intercepting and dispatching navigation actions
+const middleware = routerMiddleware(history);
 
-render(
+// Add the reducer to your store on the `router` key
+// Also apply our middleware for navigating
+const store = createStore(
+    MyReducers,applyMiddleware(middleware)
+);
+
+// Now you can dispatch navigation actions from anywhere!
+// store.dispatch(push('/foo'))
+
+ReactDOM.render(
   <Provider store={store}>
+    {/* ConnectedRouter will use the store from Provider automatically */}
     <ConnectedRouter history={history}>
-      <App />
+      <div>
+        <Route exact path="/image" component={Example} />
+        <Route exact path="/register" component={Register} />
+        <Route path="/video" component={Video} />
+        <Route exact path="/" component={HomePage} />
+      </div>
     </ConnectedRouter>
   </Provider>,
-  document.getElementById('root'),
-)
+  document.getElementById("root")
+);

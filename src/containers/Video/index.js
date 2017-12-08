@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import setting from "./setting";
 import data from "./data";
 import Carousel from "../../MyLib/react-3d-carousel-video/js/Carousel";
@@ -87,7 +88,7 @@ export default class Example extends React.Component {
             color: "red"
           }}
         >
-          CÔNG TY HAYZBUSA
+          CÔNG TY HAYABUSA
         </div>
         <div
           style={{
@@ -128,7 +129,7 @@ export default class Example extends React.Component {
           </div>
         </div>
         <div style={{textAlign: 'center', width: '100%', marginTop: 500}} >
-          <a href="/"> image</a>
+          <Link to="/image"> image</Link>
         </div>
       </div>
     );

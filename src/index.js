@@ -17,8 +17,9 @@ import {
 import Example from "./containers/Example";
 import Video from "./containers/Video";
 import HomePage from "./containers/HomePage";
-import Register from "./containers/Register";
-// import MyReducers from "./Reducers";
+import Register from "./containers/RegisterCompany";
+
+import Company from "./containers/Company";
 
 // Create a history of your choosing (we're using a browser history in this case)
 // const history = createHistory();
@@ -42,6 +43,7 @@ ReactDOM.render(
       <div>
         <Route exact path="/image" component={Example} />
         <Route exact path="/register" component={Register} />
+        <Route exact path="/company" component={Company} />
         <Route path="/video" component={Video} />
         <Route exact path="/" component={HomePage} />
       </div>

@@ -11,8 +11,9 @@ export default class TagHeader extends React.Component {
   render() {
     return (
       <div>
-        <li style={{ color: '#00C', fontSize: 15}}>{this.props.title}</li>
+        <li onClick={()=>{this.props.onClick(this.props.href)}} style={{ color: '#00C', fontSize: 15, marginLeft: 15 }}>{this.props.title}</li>
          {this.props.child.map((item)=>{
+            <li style={{ color: '#00C', fontSize: 15, marginLeft: 30 }}>{item.title}</li>
          })}
       </div>
     );
@@ -21,4 +22,5 @@ export default class TagHeader extends React.Component {
 TagHeader.propTypes = {
   title: PropTypes.any,
   child: PropTypes.any,
+  onClick: PropTypes.func,
 };

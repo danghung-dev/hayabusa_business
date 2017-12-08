@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Select from 'react-select';
-import 'react-select/dist/react-select.css';
+import React from "react";
+import PropTypes from "prop-types";
+import Select from "react-select";
+import "react-select/dist/react-select.css";
 export default class MySelect extends React.Component {
   constructor() {
     super();
@@ -10,11 +10,14 @@ export default class MySelect extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div style={{ padding: 0 }} className={this.props.className ? this.props.className : 'row'}>
+      <div
+        style={{ padding: 0 }}
+        className={this.props.className ? this.props.className : "row"}
+      >
         <span style={{}} className="col-sm-5">
           {this.props.title}
         </span>
-        <div style={{ padding: '0 0 0 5' }} className="col-sm-7">
+        <div style={{ padding: "0 0 0 5" }} className="col-sm-7">
           <Select
             name="form-field-name"
             clearable={false}
@@ -32,5 +35,5 @@ MySelect.propTypes = {
   title: PropTypes.string,
   value: PropTypes.any,
   options: PropTypes.any,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func
 };

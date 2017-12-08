@@ -1,33 +1,33 @@
 import React from "react";
-import { connect } from 'react-redux'
-import { getList } from './actions'
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import { getList } from "./actions";
 export class Home extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-    };
-     this.props.getlist()
+    this.state = {};
+  }
+  componentWillMount() {
+    this.props.getList();
   }
   render() {
-    return (
-      <div>
-       
-      </div>
-    );
+    return <div> test </div>;
   }
 }
-const mapStateToProps = state => {
+const mapStateToProps = store => {
+  const state = store.home;
+  console.log("list categories: ", state.list);
   return {
-    list : state.List.get('list'),
-  }
-}
-const mapDispatchToProps = dispatch => {
-  return {
-    getlist : () => dispatch(getList())
-  }
-}
+    list: state.list
+  };
+};
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Home)
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(
+    {
+      getList
+    },
+    dispatch
+  );
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

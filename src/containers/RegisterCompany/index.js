@@ -1,6 +1,6 @@
 import React from "react";
-import Select from '../../compoments/Select';
-import 'bootstrap/dist/css/bootstrap.css';
+import Select from "../../compoments/Select";
+import "bootstrap/dist/css/bootstrap.css";
 export default class Example extends React.Component {
   constructor() {
     super();
@@ -18,16 +18,16 @@ export default class Example extends React.Component {
   }
   render() {
     return (
-      <div className="row" >
+      <div className="row">
         <Select
           className="col-sm-5 offset-sm-3"
-          title= "Chọn ngành nghề "
+          title="Chọn ngành nghề "
           name="form-field-name"
           value={this.state.companyValue}
           onChange={this.selectCompany}
           options={[
-            { value: 'one', label: 'One' },
-            { value: 'two', label: 'Two' },
+            { value: "one", label: "One" },
+            { value: "two", label: "Two" }
           ]}
         />
       </div>

@@ -1,36 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { createStore, combineReducers, applyMiddleware } from "redux";
+// import { createStore, combineReducers, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
-
-import createHistory from "history/createBrowserHistory";
+import store, { history } from "./store";
+// import createHistory from "history/createBrowserHistory";
 import { Route } from "react-router";
 
 import {
-  ConnectedRouter,
-  routerReducer,
-  routerMiddleware,
-  push
+  ConnectedRouter
+  // routerReducer,
+  // routerMiddleware,
+  // push
 } from "react-router-redux";
 
 import Example from "./containers/Example";
 import Video from "./containers/Video";
 import HomePage from "./containers/HomePage";
 import Register from "./containers/Register";
-import MyReducers from "./Reducers";
+// import MyReducers from "./Reducers";
 
 // Create a history of your choosing (we're using a browser history in this case)
-const history = createHistory();
+// const history = createHistory();
 
 // Build the middleware for intercepting and dispatching navigation actions
-const middleware = routerMiddleware(history);
+// const middleware = routerMiddleware(history);
 
 // Add the reducer to your store on the `router` key
 // Also apply our middleware for navigating
-const store = createStore(
-    MyReducers,applyMiddleware(middleware)
-);
+// const store = createStore(
+//     MyReducers,applyMiddleware(middleware)
+// );
 
 // Now you can dispatch navigation actions from anywhere!
 // store.dispatch(push('/foo'))

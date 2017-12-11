@@ -18,20 +18,20 @@ export default class Company extends React.Component {
             <div style={styles.number}> {this.props.number}</div>
           </div>
           <div className="col-10">
-            <h5 style={styles.title}>
-              {this.props.infor.name}
-            </h5>
+            <h5 style={styles.title}>{this.props.infor.name}</h5>
             <Star number={4} />
             <div style={{ marginTop: 10 }} className="row no-gutters">
               <div
                 style={{ border: "1px solid gray" }}
                 className="col-3 row no-gutters justify-content-center"
               >
-                <img
-                  src="http://logo.trangvangvietnam.com/L3954750400.gif"
-                  width="75"
-                  height="75"
-                />
+                {
+                  // <img
+                  // src="http://logo.trangvangvietnam.com/L3954750400.gif"
+                  // width="75"
+                  // height="75"
+                  // />
+                }
               </div>
               <div
                 style={{ paddingLeft: 20, paddingRight: 10, fontSize: 12 }}
@@ -42,22 +42,19 @@ export default class Company extends React.Component {
                 </p>
                 <p>{this.props.infor.address}</p>
                 <p style={{ color: "black", fontWeight: "bold" }}>
-                {this.props.infor.phoneNumber}
+                  {this.props.infor.phoneNumber}
                 </p>
               </div>
             </div>
             <div style={{ marginTop: 20 }} className="row no-gutters">
-              {this.props.infor.images.map((item)=>{
-                <div style={{ border: "1px solid #cecece", marginRight: 5 }} className="col-2">
-                  <img  src={item} width="100%" height="100%" />
-                </div>
+              {this.props.infor.images.map(item => {
+                <div
+                  style={{ border: "1px solid #cecece", marginRight: 5 }}
+                  className="col-2"
+                >
+                  <img src={item} width="100%" height="100%" />
+                </div>;
               })}
-              <div style={{ border: "1px solid #cecece", marginRight: 5 }} className="col-2">
-                <img  src="http://pic.trangvangvietnam.com/pics_low/39547504/ENIMAC-N40.jpg" width="100%" height="100%" />
-              </div>
-              <div style={{ border: "1px solid #cecece", marginRight: 5 }} className="col-2">
-                <img  src="http://pic.trangvangvietnam.com/pics_low/39547504/ENIMAC-N40.jpg" width="100%" height="100%" />
-              </div>
             </div>
           </div>
         </div>
@@ -73,13 +70,19 @@ export default class Company extends React.Component {
             style={{ paddingTop: 20, paddingBottom: 20 }}
             className="col-6 row no-gutters justify-content-center"
           >
-            <a href="" style={{ color:' #007BAC' }} > {this.props.infor.email} </a>
+            <a href="" style={{ color: " #007BAC" }}>
+              {" "}
+              {this.props.infor.email}{" "}
+            </a>
           </div>
           <div
             style={{ paddingTop: 20, paddingBottom: 20 }}
             className="col-6 row no-gutters justify-content-center"
           >
-            <a href={this.props.infor.website} style={{ color:' #007BAC' }} > {this.props.infor.website} </a>
+            <a href={this.props.infor.website} style={{ color: " #007BAC" }}>
+              {" "}
+              {this.props.infor.website}{" "}
+            </a>
           </div>
         </div>
       </div>

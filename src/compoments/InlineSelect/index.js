@@ -11,13 +11,14 @@ export default class MySelect extends React.Component {
   render() {
     return (
       <div
-        style={{ padding: 0 }}
+        style={{ marginTop: 10, marginBottom: 10 }}
+        className="form-group row "
         className={this.props.className ? this.props.className : "row"}
       >
-        <span style={{}} className="col-sm-3">
+        <span style={{ marginTop: 5 }} className="col-sm-3">
           {this.props.title}
         </span>
-        <div style={{ padding: "0 0 0 5" }} className="col-sm-9">
+        <div style={{}} className="col-sm-9">
           <Select
             name="form-field-name"
             clearable={false}

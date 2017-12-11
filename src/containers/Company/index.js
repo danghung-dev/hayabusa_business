@@ -2,6 +2,7 @@ import React from "react";
 import { parse } from "qs";
 import { connect } from "react-redux";
 import { getCompanyFromCategory } from "./actions";
+
 import { bindActionCreators } from "redux";
 import CompanyList from "../../compoments/CompanyList";
 export class Company extends React.PureComponent {
@@ -17,7 +18,6 @@ export class Company extends React.PureComponent {
     this.props.getCompanyFromCategory(params.categoryid);
   }
   render() {
-    console.log(this.props.list);
     return (
       <div>
         <div

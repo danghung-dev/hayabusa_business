@@ -1,15 +1,15 @@
 // import { fromJS } from 'immutable';
 const initState = {
   success: false,
-  list: {}
+  data: {}
 };
-const AddCompany = (state = initState, action) => {
+const getCompanyID = (state = initState, action) => {
   switch (action.type) {
-    case "ADD_COMPANY_SUCCESS":
+    case "GET_COMPANY_FROM_CATEGORY_SUCCESS":
       return { ...state, data: action.data, success: action.success };
     default:
       return state;
   }
 };
 
-export default AddCompany;
+export default getCompanyID;

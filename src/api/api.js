@@ -39,7 +39,18 @@ export async function api_getCompanyCategory(categoryId) {
     return { success: false, data: null };
   }
 }
-
+export async function api_getCompanyFromID(companyID) {
+  const options = {
+    url: `${BASE_URL}/companies/${companyID}`,
+    method: "GET"
+  };
+  try {
+    const result = await doRequest(options);
+    return result;
+  } catch (error) {
+    return { success: false, data: null };
+  }
+}
 export async function api_addCompany(data) {
   const options = {
     url: `${BASE_URL}/companies`,

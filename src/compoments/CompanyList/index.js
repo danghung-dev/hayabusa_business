@@ -21,8 +21,12 @@ export default class CompanyList extends React.Component {
           className="col-6"
         >
           <div style={{ margin: 20 }}>
-            <h5 style={styles.title}> Ắc Quy - Nhà Cung Cấp ắc Quy</h5>
-              {this.props.data.map((item,id)=>(<Company key={id} infor={item} number={id + 1} />))}
+            <h5 style={styles.title}>
+              経済分類： {this.props.categoryInfo.name}
+            </h5>
+            {this.props.data.map((item, id) => (
+              <Company key={id} infor={item} number={id + 1} />
+            ))}
           </div>
         </div>
       </div>
@@ -37,7 +41,7 @@ CompanyList.propTypes = {
 const styles = {
   title: {
     margin: 0,
-    fontSize: 13,
+    fontSize: 20,
     color: "#CC3366"
   }
 };

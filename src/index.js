@@ -41,9 +41,11 @@ ReactDOM.render(
     {/* ConnectedRouter will use the store from Provider automatically */}
     <ConnectedRouter history={history}>
       <div>
+        <Route exact path="/category/:categoryid" component={Company} />
         <Route exact path="/image" component={Example} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/company" component={Company} />
+
         <Route path="/video" component={Video} />
         <Route exact path="/" component={HomePage} />
       </div>

@@ -48,6 +48,19 @@ export class Home extends React.PureComponent {
         >
           {lang.t("hayabusa")}
         </div>
+        <div>
+          <div>
+            <img src="./img/petrolimex.png" width={150} /> PETROLグループ
+            <div>
+              <img src="./img/petro_setco.svg" width={150} /> PetroSetco
+            </div>
+          </div>
+          <div>
+            <a href="http://fahasa.com">
+              <img src="./img/fahasa.png" width={150} /> FAHASAグループ
+            </a>
+          </div>
+        </div>
         <div style={{ marginTop: 30 }}>
           <div className="col-10 col-sm-8 offset-1 offset-sm-2">
             <h5 style={{ color: "blue", marginTop: 20, marginBottom: 20 }}>

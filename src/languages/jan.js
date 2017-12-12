@@ -1,4 +1,26 @@
 module.exports = {
   hayabusa: "HAYABUSA",
-  categoryList: "経済分類は下記のように対応します。"
+  categoryList: "経済分類は下記のように対応します。",
+  companyInfor: "会社情報",
+  registerComapany: "会社情報申し込み",
+  name: "会社名 * :",
+  address: "住所 * :",
+  telephoneNumber: "電話番号 :",
+  Fax: "ファクス:",
+  Website: "ホームーページ :",
+  email: "メール:",
+  city: "国 *:",
+  director: "取り市役所:",
+  directorEmail: "Email giám đốc:",
+  mainCategory: "経済分類 * :",
+  shortDescription: "説明",
+  register: "申し込み",
+  _company_infor_category: "Ngành :",
+  cateName: "経済分類：",
+  _company_Detail_address: "住所:",
+  _company_Detail_Tel: "電話番号:",
+  _company_Detail_Fax: "ファクス:",
+  _company_Detail_email: "メール:",
+  _company_Detail_web: "ホームページ:",
+  _company_Detail_Infor: "説明"
 };

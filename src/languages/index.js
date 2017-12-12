@@ -5,7 +5,7 @@ import jan from "./jan";
 
 i18next.init(
   {
-    lng: "vi",
+    lng: "jan",
     debug: true,
     resources: {
       en: {

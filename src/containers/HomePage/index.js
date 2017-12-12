@@ -23,15 +23,17 @@ export class Home extends React.PureComponent {
   }
   renderListCategory() {
     if (!this.props.listCategory) return null;
-    let listDiv;
-    listDiv = this.props.listCategory.map(t => (
-      <CategoryList
-        _id={t._id}
-        name={t.name}
-        childs={t.childs ? t.childs : []}
-      />
-    ));
-    return <div>{listDiv}</div>;
+    return <CategoryList listCategory={this.props.listCategory} />;
+    // let listDiv;
+    // listDiv = this.props.listCategory.map(t => (
+    //   <CategoryList
+
+    //     _id={t._id}
+    //     name={t.name}
+    //     childs={t.childs ? t.childs : []}
+    //   />
+    // ));
+    // return <div>{listDiv}</div>;
   }
   render() {
     const sef = this;
@@ -66,7 +68,7 @@ export class Home extends React.PureComponent {
             <h5 style={{ color: "blue", marginTop: 20, marginBottom: 20 }}>
               {lang.t("categoryList")}
             </h5>
-            <div style={{ border: "1px solid gray", padding: 20 }}>
+            <div style={{ paddingTop: 20 }}>
               {this.renderListCategory()}
             </div>
             <button

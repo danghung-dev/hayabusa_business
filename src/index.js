@@ -20,6 +20,7 @@ import HomePage from "./containers/HomePage";
 import Register from "./containers/RegisterCompany";
 import CompanyDetal from "./containers/CompanyDetail";
 import Company from "./containers/Company";
+import Header from "./compoments/Header";
 import "bootstrap/dist/css/bootstrap.css";
 
 // Create a history of your choosing (we're using a browser history in this case)
@@ -42,6 +43,7 @@ ReactDOM.render(
     {/* ConnectedRouter will use the store from Provider automatically */}
     <ConnectedRouter history={history}>
       <div>
+        <Header />
         <Route exact path="/category/:categoryid" component={Company} />
         <Route exact path="/image" component={Example} />
         <Route exact path="/register" component={Register} />

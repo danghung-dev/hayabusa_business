@@ -6,27 +6,46 @@ export default class CategoryList extends React.Component {
   constructor() {
     super();
     this.state = {};
+    this.parseTable = this.parseTable.bind(this);
   }
   // eslint-disable-line react/prefer-stateless-function
+  parseTable(list, number) {
+    let result = [];
+    let row = [];
+    if (!list) return [];
+    list.map(item => {
+      row.push(item);
+      if (row.length > 3) {
+        result.push(row);
+        row = [];
+      }
+      return true;
+    });
+    if (row.length > 0) {
+      result.push(row);
+    }
+    return result;
+  }
   render() {
-    const link = `/category/${this.props._id}`;
+    //  const link = `/category/${this.props._id}`;
     const sef = this;
+    const table = this.parseTable(this.props.listCategory);
     return (
-      <div>
-        <Link target="_blank" to={link}>
-          {this.props.name}
-        </Link>
-        {this.props.childs.map(t => {
-          const tempLink = `/category/${t._id}`;
-          return (
-            <div>
-              <Link target="_blank" to={tempLink}>
-                {t.name}
-              </Link>
-            </div>
-          );
-        })}
-      </div>
+      <table class="table table-bordered">
+        <tbody>
+          {table.map(item => {
+            let row = item.map(item1 => {
+              let link = `/category/${item1._id}`;
+              return (
+                <td>
+                  <Link to={link}>{item1.name}</Link>
+                </td>
+              );
+            });
+            return <tr> {row} </tr>;
+          })}
+        </tbody>
+      </table>
     );
   }
 }

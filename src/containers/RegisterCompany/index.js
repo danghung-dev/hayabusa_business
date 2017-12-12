@@ -1,9 +1,11 @@
 import React from "react";
 import { parse } from "qs";
 import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import lang from "../../languages";
 import { addCompany } from "./actions";
 import { getList } from "../HomePage/actions";
-import { bindActionCreators } from "redux";
+
 import InlineForm from "../../compoments/InlineForm";
 import InlineSelect from "../../compoments/InlineSelect";
 export class RegisterCompany extends React.PureComponent {
@@ -67,23 +69,24 @@ export class RegisterCompany extends React.PureComponent {
       <div style={{ marginBottom: 200 }}>
         <div
           style={{
+            marginTop: 30,
+            width: "100%",
             textAlign: "center",
-            marginTop: 20,
             fontSize: 30,
-            color: "blue"
+            color: "red"
           }}
         >
-          HAYABUSA
+          {lang.t("hayabusa")}
         </div>
-        <div style={{ marginTop: 50 }} className="row">
+        <div style={{ marginTop: 30 }} className="row">
           <div className="col-10 col-sm-8 offset-1 offset-sm-2">
             <h5 style={{ color: "blue", marginTop: 20, marginBottom: 20 }}>
-              Thông tin công ty
+              {lang.t("companyInfor")}
             </h5>
             <div style={{ border: "1px solid gray" }}>
               <form style={{ marginTop: 10, padding: 20 }}>
                 <InlineForm
-                  label="Tên công ty * :"
+                  label={lang.t("name")}
                   id="name"
                   placeholder=""
                   value={this.state.name}
@@ -92,7 +95,7 @@ export class RegisterCompany extends React.PureComponent {
                   }}
                 />
                 <InlineForm
-                  label="Đia chỉ * :"
+                  label={lang.t("address")}
                   id="address"
                   placeholder=""
                   value={this.state.address}
@@ -101,7 +104,7 @@ export class RegisterCompany extends React.PureComponent {
                   }}
                 />
                 <InlineForm
-                  label="Điện thoại :"
+                  label={lang.t("telephoneNumber")}
                   id="telephoneNumber"
                   placeholder=""
                   value={this.state.telephoneNumber}
@@ -110,7 +113,7 @@ export class RegisterCompany extends React.PureComponent {
                   }}
                 />
                 <InlineForm
-                  label="Số Fax:"
+                  label={lang.t("Fax")}
                   id="Fax"
                   placeholder=""
                   value={this.state.Fax}
@@ -119,7 +122,7 @@ export class RegisterCompany extends React.PureComponent {
                   }}
                 />
                 <InlineForm
-                  label="Website :"
+                  label={lang.t("Website")}
                   id="Website"
                   placeholder=""
                   value={this.state.Website}
@@ -128,7 +131,7 @@ export class RegisterCompany extends React.PureComponent {
                   }}
                 />
                 <InlineForm
-                  label="Email:"
+                  label={lang.t("email")}
                   id="email"
                   placeholder=""
                   value={this.state.email}
@@ -137,7 +140,7 @@ export class RegisterCompany extends React.PureComponent {
                   }}
                 />
                 <InlineForm
-                  label="Tỉnh/Thành phố *:"
+                  label={lang.t("city")}
                   id="city"
                   placeholder=""
                   value={this.state.city}
@@ -146,7 +149,7 @@ export class RegisterCompany extends React.PureComponent {
                   }}
                 />
                 <InlineForm
-                  label="Tên giám đốc:"
+                  label={lang.t("director")}
                   id="director"
                   placeholder=""
                   value={this.state.director}
@@ -155,7 +158,7 @@ export class RegisterCompany extends React.PureComponent {
                   }}
                 />
                 <InlineForm
-                  label="Email giám đốc:"
+                  label={lang.t("directorEmail")}
                   id="directorEmail"
                   placeholder=""
                   value={this.state.directorEmail}
@@ -164,7 +167,7 @@ export class RegisterCompany extends React.PureComponent {
                   }}
                 />
                 <InlineSelect
-                  title="Ngành nghề * :"
+                  title={lang.t("mainCategory")}
                   id="mainCategory"
                   options={this.parseList(this.props.listCategory)}
                   value={this.state.mainCategory}
@@ -173,7 +176,9 @@ export class RegisterCompany extends React.PureComponent {
                   }}
                 />
                 <div className="form-group no-gutters">
-                  <label className="col-sm-12">Chi tiết công ty</label>
+                  <label className="col-sm-12">
+                    {lang.t("shortDescription")}
+                  </label>
                   <div className="col-sm-12">
                     <textarea
                       type="name"
@@ -194,7 +199,7 @@ export class RegisterCompany extends React.PureComponent {
               type="submit"
               className="btn btn-primary col-6 offset-3 col-sm-4 offset-sm-4"
             >
-              Register
+              {lang.t("register")}
             </button>
           </div>
         </div>

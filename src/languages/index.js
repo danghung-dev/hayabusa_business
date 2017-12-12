@@ -1,11 +1,11 @@
 import i18next from "i18next";
 import en from "./en";
 import vi from "./vi";
-import jan from "./Jan";
+import jan from "./jan";
 
 i18next.init(
   {
-    lng: "en",
+    lng: "vi",
     debug: true,
     resources: {
       en: {

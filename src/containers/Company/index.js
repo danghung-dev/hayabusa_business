@@ -5,6 +5,7 @@ import { getCompanyFromCategory } from "./actions";
 
 import { bindActionCreators } from "redux";
 import CompanyList from "../../compoments/CompanyList";
+import lang from "../../languages";
 export class Company extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -29,7 +30,7 @@ export class Company extends React.PureComponent {
           }}
         >
           {" "}
-          HAYABUSA
+          {lang.t("hayabusa")}
         </div>
         <div style={{ marginTop: 20 }}>
           <CompanyList

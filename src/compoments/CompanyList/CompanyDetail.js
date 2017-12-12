@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Select from "react-select";
 import Star from "./Star";
 import "../../font/css/font-awesome.min.css";
-
+import lang from "../../languages";
 export default class Company extends React.Component {
   constructor() {
     super();
@@ -38,7 +38,8 @@ export default class Company extends React.Component {
                 className="col-8"
               >
                 <p style={{ color: "#888" }}>
-                  Ngành: <span style={{ color: "#0066cc" }}> Ngành ô tô</span>
+                  {lang.t("_company_infor_category")}{" "}
+                  <span style={{ color: "#0066cc" }}> Ngành ô tô</span>
                 </p>
                 <p>{this.props.infor.address}</p>
                 <p style={{ color: "black", fontWeight: "bold" }}>

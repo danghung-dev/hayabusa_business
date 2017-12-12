@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Select from "react-select";
 import Company from "./CompanyDetail";
+import lang from "../../languages";
 export default class CompanyList extends React.Component {
   constructor() {
     super();
@@ -22,7 +23,7 @@ export default class CompanyList extends React.Component {
         >
           <div style={{ margin: 20 }}>
             <h5 style={styles.title}>
-              経済分類： {this.props.categoryInfo.name}
+              {lang.t('cateName')} {this.props.categoryInfo.name}
             </h5>
             {this.props.data.map((item, id) => (
               <Company key={id} infor={item} number={id + 1} />

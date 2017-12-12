@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { parse } from "qs";
 import { connect } from "react-redux";
 import { getCompany } from "./actions";
+import CompanyDetailCompoments from "../../compoments/CompanyDetail";
+import lang from "../../languages";
 export class CompanyDetail extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -16,7 +18,23 @@ export class CompanyDetail extends React.PureComponent {
 
   render() {
     const sef = this;
-    return <div>{JSON.stringify(this.props.companyDetail)}</div>;
+    return (
+      <div>
+        <div
+          style={{
+            marginTop: 30,
+            width: "100%",
+            height: 100,
+            textAlign: "center",
+            fontSize: 30,
+            color: "red"
+          }}
+        >
+          {lang.t("hayabusa")}
+        </div>
+        <CompanyDetailCompoments infor={this.props.companyDetail} />
+      </div>
+    );
   }
 }
 const mapStateToProps = store => {

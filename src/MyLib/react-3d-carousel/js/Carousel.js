@@ -108,7 +108,7 @@ const Carousel = createReactClass({
             sef.state.height / 2 - parseInt(sef.state.width / 9, 10) + 30,
             10
           )}px`,
-          left: "50px",
+          left: "5px",
           width: `${parseInt(sef.state.width / 9, 10)}px`,
           height: `${parseInt(sef.state.width / 9, 10)}px`,
           zIndex: 100000
@@ -124,7 +124,7 @@ const Carousel = createReactClass({
             (sef.state.height + 60) / 2 - parseInt(sef.state.width / 9, 10),
             10
           )}px`,
-          left: `${parseInt(sef.state.width - sef.state.width / 9 + 50, 10)}px`,
+          left: `${parseInt(sef.state.width - sef.state.width / 9 + 10, 10)}px`,
           width: `${parseInt(sef.state.width / 9, 10)}px`,
           height: `${parseInt(sef.state.width / 9, 10)}px`,
           zIndex: 100000

@@ -14,7 +14,6 @@ import {
   // push
 } from "react-router-redux";
 
-import Example from "./containers/Example";
 import Video from "./containers/Video";
 import HomePage from "./containers/HomePage";
 import Register from "./containers/RegisterCompany";
@@ -45,7 +44,6 @@ ReactDOM.render(
       <div>
         <Header />
         <Route exact path="/category/:categoryid" component={Company} />
-        <Route exact path="/image" component={Example} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/company" component={Company} />
         <Route exact path="/detail" component={CompanyDetal} />

@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import lang from "../../languages";
 import { getList } from "./actions";
 import CategoryList from "../../compoments/CategoryList";
+import CompanyLogo from "../../compoments/CompanyLogo";
 export class Home extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -24,16 +25,6 @@ export class Home extends React.PureComponent {
   renderListCategory() {
     if (!this.props.listCategory) return null;
     return <CategoryList listCategory={this.props.listCategory} />;
-    // let listDiv;
-    // listDiv = this.props.listCategory.map(t => (
-    //   <CategoryList
-
-    //     _id={t._id}
-    //     name={t.name}
-    //     childs={t.childs ? t.childs : []}
-    //   />
-    // ));
-    // return <div>{listDiv}</div>;
   }
   render() {
     const sef = this;
@@ -50,27 +41,34 @@ export class Home extends React.PureComponent {
         >
           {lang.t("hayabusa")}
         </div>
-        <div>
-          <div>
-            <img src="./img/petrolimex.png" width={150} /> PETROLグループ
-            <div>
-              <img src="./img/petro_setco.svg" width={150} /> PetroSetco
-            </div>
-          </div>
-          <div>
+
+        <div
+          style={{
+            marginTop: 15,
+            paddingTop: 15,
+            paddingBottom: 30,
+            width: "100%",
+            textAlign: "center",
+            color: "red",
+            backgroundColor: "#33ccff"
+          }}
+        >
+          <img src="./img/petrolimex.png" width={150} /> PETROLグループ
+          <CompanyLogo number={1} />
+          <div style={{ marginTop: 15 }}>
             <a href="http://fahasa.com">
               <img src="./img/fahasa.png" width={150} /> FAHASAグループ
             </a>
+            <CompanyLogo />
           </div>
         </div>
+
         <div style={{ marginTop: 30 }}>
           <div className="col-10 col-sm-8 offset-1 offset-sm-2">
             <h5 style={{ color: "blue", marginTop: 20, marginBottom: 20 }}>
               {lang.t("categoryList")}
             </h5>
-            <div style={{ paddingTop: 20 }}>
-              {this.renderListCategory()}
-            </div>
+            <div style={{ paddingTop: 20 }}>{this.renderListCategory()}</div>
             <button
               style={{ marginTop: 50, marginBottom: 20 }}
               onClick={this.register}

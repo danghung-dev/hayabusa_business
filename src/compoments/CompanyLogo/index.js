@@ -75,15 +75,19 @@ export default class Example extends React.Component {
   }
   render() {
     return (
-      <div style={{ width: "100%" }}>
-        <div style={{ width: "100%", marginTop: 10 }}>
+      <div style={{ width: "100%", marginTop: 20 }}>
+        <div
+          style={{
+            width: 600,
+            height: 150,
+            margin: "auto"
+          }}
+        >
           <MyCarousel
-            style={{
-              marginLeft: 500
-            }}
+            style={{ marginLeft: 140 }}
             key3D="abc"
-            width="300"
-            height="150"
+            width={300}
+            height={150}
             images={this.state.images}
             href={this.state.href}
             text={this.state.text}
@@ -94,7 +98,6 @@ export default class Example extends React.Component {
             autoRotateTime={1500}
           />
         </div>
-        <div style={{ height: 150, width: "100%" }} />
       </div>
     );
   }

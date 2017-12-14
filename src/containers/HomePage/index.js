@@ -41,7 +41,16 @@ export class Home extends React.PureComponent {
         >
           {lang.t("hayabusa")}
         </div>
-
+        <div
+          style={{
+            width: "100%",
+            textAlign: "center",
+            fontSize: 30,
+            color: "red"
+          }}
+        >
+          <img src="./img/viet_nhat.jpg" width={400} />
+        </div>
         <div
           style={{
             marginTop: 15,

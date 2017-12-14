@@ -1,5 +1,5 @@
 module.exports = {
-  hayabusa: "HAYABUSA",
+  hayabusa: "HAYABUSA企業交流サイト",
   categoryList: "経済分類は下記のように対応します。",
   companyInfor: "会社情報",
   registerComapany: "会社情報申し込み",

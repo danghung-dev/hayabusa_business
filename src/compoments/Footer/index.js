@@ -16,12 +16,18 @@ export default class footer extends React.Component {
         style={{
           padding: 20,
           margin: "50px 15%",
-          textAlign: "center",
+          textAlign: "left",
           color: "#007bff",
           border: "1px solid gray"
         }}
       >
-        <p style={{ marginBottom: 0 }}>{lang.t("_footer_text")}</p>
+        <p style={{ marginBottom: 0 }}>{lang.t("_footer_name_text")}</p>
+        <li style={{ marginBottom: 0, paddingLeft: 20 }}>
+          {lang.t("_footer_Web_text")}
+        </li>
+        <li style={{ marginBottom: 0, paddingLeft: 20 }}>
+          {lang.t("_footer_text")}
+        </li>
       </div>
     );
   }

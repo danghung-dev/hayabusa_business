@@ -14,14 +14,14 @@ export default class footer extends React.Component {
     return (
       <div
         style={{
-          height: 20,
+          padding: 20,
+          margin: "50px 15%",
           textAlign: "center",
-          marginTop: 50,
-          marginBottom: 40,
-          color: "#007bff"
+          color: "#007bff",
+          border: "1px solid gray"
         }}
       >
-        <p>{lang.t("_footer_text")}</p>
+        <p style={{ marginBottom: 0 }}>{lang.t("_footer_text")}</p>
       </div>
     );
   }

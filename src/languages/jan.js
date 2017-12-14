@@ -22,5 +22,7 @@ module.exports = {
   _company_Detail_Fax: "ファクス:",
   _company_Detail_email: "メール:",
   _company_Detail_web: "ホームページ:",
-  _company_Detail_Infor: "説明"
+  _company_Detail_Infor: "説明",
+  _footer_text:
+    "Công ty HAYABUSA, nhà thiết kế web chuyên nghiệp và chuyên gia liên kết doanh nghiệp Việt Nam - Nhật Bản"
 };

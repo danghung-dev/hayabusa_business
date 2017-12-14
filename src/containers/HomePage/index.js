@@ -7,6 +7,7 @@ import lang from "../../languages";
 import { getList } from "./actions";
 import CategoryList from "../../compoments/CategoryList";
 import CompanyLogo from "../../compoments/CompanyLogo";
+import Footer from "../../compoments/Footer";
 export class Home extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -30,41 +31,14 @@ export class Home extends React.PureComponent {
     const sef = this;
     return (
       <div>
-        <div
-          style={{
-            marginTop: 30,
-            width: "100%",
-            textAlign: "center",
-            fontSize: 30,
-            color: "red"
-          }}
-        >
-          {lang.t("hayabusa")}
-        </div>
-        <div
-          style={{
-            width: "100%",
-            textAlign: "center",
-            fontSize: 30,
-            color: "red"
-          }}
-        >
+        <div style={styles.title}>{lang.t("hayabusa")}</div>
+        <div style={styles.vietnhatimage}>
           <img src="./img/viet_nhat.jpg" width={400} />
         </div>
-        <div
-          style={{
-            marginTop: 15,
-            paddingTop: 15,
-            paddingBottom: 30,
-            width: "100%",
-            textAlign: "center",
-            color: "red",
-            backgroundColor: "#33ccff"
-          }}
-        >
+        <div style={styles.petroImgae}>
           <img src="./img/petrolimex.png" width={150} /> PETROLグループ
           <CompanyLogo number={1} />
-          <div style={{ marginTop: 15 }}>
+          <div style={styles.fahasaBlock}>
             <a href="http://fahasa.com">
               <img src="./img/fahasa.png" width={150} /> FAHASAグループ
             </a>
@@ -72,7 +46,7 @@ export class Home extends React.PureComponent {
           </div>
         </div>
 
-        <div style={{ marginTop: 30 }}>
+        <div style={styles.categoryBlock}>
           <div className="col-10 col-sm-8 offset-1 offset-sm-2">
             <h5 style={{ color: "blue", marginTop: 20, marginBottom: 20 }}>
               {lang.t("categoryList")}
@@ -88,10 +62,41 @@ export class Home extends React.PureComponent {
             </button>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
 }
+const styles = {
+  title: {
+    marginTop: 30,
+    width: "100%",
+    textAlign: "center",
+    fontSize: 30,
+    color: "red"
+  },
+  vietnhatimage: {
+    width: "100%",
+    textAlign: "center",
+    fontSize: 30,
+    color: "red"
+  },
+  petroImgae: {
+    marginTop: 15,
+    paddingTop: 15,
+    paddingBottom: 30,
+    width: "100%",
+    textAlign: "center",
+    color: "red",
+    backgroundColor: "#33ccff"
+  },
+  fahasaBlock: {
+    marginTop: 15
+  },
+  categoryBlock: {
+    marginTop: 30
+  }
+};
 const mapStateToProps = store => {
   const state = store.home;
   console.log("list categories: ", state.list);

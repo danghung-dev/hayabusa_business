@@ -11,11 +11,11 @@ module.exports = {
   email: "メール:",
   city: "国 *:",
   director: "取り市役所:",
-  directorEmail: "Email giám đốc:",
+  directorEmail: "社長のメール:",
   mainCategory: "経済分類 * :",
   shortDescription: "説明",
   register: "申し込み",
-  _company_infor_category: "Ngành :",
+  _company_infor_category: "業種 :",
   cateName: "経済分類：",
   _company_Detail_address: "住所:",
   _company_Detail_Tel: "電話番号:",
@@ -23,7 +23,7 @@ module.exports = {
   _company_Detail_email: "メール:",
   _company_Detail_web: "ホームページ:",
   _company_Detail_Infor: "説明",
-  _footer_name_text: "Công ty HAYABUSA :",
-  _footer_Web_text: " Nhà thiết kế web chuyên nghiệp.",
-  _footer_text: "Chuyên gia liên kết doanh nghiệp Việt Nam - Nhật Bản."
+  _footer_name_text: "株式会社 HAYABUSA :",
+  _footer_Web_text: " ホームページ作成対応",
+  _footer_text: " 交流したい会社は連絡してください。メールにて連絡代行します。"
 };

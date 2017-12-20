@@ -1,5 +1,5 @@
 import request from "request";
-const BASE_URL = "http://192.168.71.22:4040/api";
+const BASE_URL = "http://dev.hayasw.com:4001/api";
 
 export async function api_getListCategory() {
   const options = {

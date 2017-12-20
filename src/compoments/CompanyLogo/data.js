@@ -7,37 +7,37 @@ module.exports = [
       {
         image: "./FahasaImage/fahasa1.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.fahasa.com"
       },
       {
         image: "./FahasaImage/fahasa2.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.fahasa.com"
       },
       {
         image: "./FahasaImage/fahasa3.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.fahasa.com"
       },
       {
         image: "./FahasaImage/fahasa4.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.fahasa.com"
       },
       {
         image: "./FahasaImage/fahasa1.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.fahasa.com"
       },
       {
         image: "./FahasaImage/fahasa2.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.fahasa.com"
       },
       {
         image: "./FahasaImage/fahasa3.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.fahasa.com"
       }
     ]
   },
@@ -48,37 +48,37 @@ module.exports = [
       {
         image: "./PetroImage/1.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.petrosetco.com.vn/"
       },
       {
         image: "./PetroImage/2.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.petrosetco.com.vn/"
       },
       {
         image: "./PetroImage/3.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.petrosetco.com.vn/"
       },
       {
         image: "./PetroImage/4.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.petrosetco.com.vn/"
       },
       {
         image: "./PetroImage/5.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.petrosetco.com.vn/"
       },
       {
         image: "./PetroImage/1.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.petrosetco.com.vn/"
       },
       {
         image: "./PetroImage/2.jpg",
         title: "Apple",
-        href: "http://www.google.com"
+        href: "http://www.petrosetco.com.vn/"
       }
     ]
   },

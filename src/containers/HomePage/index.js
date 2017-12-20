@@ -36,7 +36,9 @@ export class Home extends React.PureComponent {
           <img src="./img/viet_nhat.jpg" width={400} />
         </div>
         <div style={styles.petroImgae}>
-          <img src="./img/petrolimex.png" width={150} /> PETROLグループ
+          <a href="http://www.petrolimex.com.vn/">
+            <img src="./img/petrolimex.png" width={150} /> PETROLグループ
+          </a>
           <CompanyLogo number={1} />
           <div style={styles.fahasaBlock}>
             <a href="http://fahasa.com">

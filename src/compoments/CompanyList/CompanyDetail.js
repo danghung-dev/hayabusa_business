@@ -21,30 +21,21 @@ export default class Company extends React.Component {
             <h5 style={styles.title}>{this.props.infor.name}</h5>
             <Star number={4} />
             <div style={{ marginTop: 10 }} className="row no-gutters">
-              <div
-                style={{ border: "1px solid gray" }}
-                className="col-3 row no-gutters justify-content-center"
-              >
-                {
-                  <img
-                    src={
-                      this.props.infor.thumbImage
-                        ? this.props.infor.thumbImage
-                        : ""
-                    }
-                    width="100%"
-                    height="auto"
-                  />
-                }
+              <div style={{ border: "1px solid gray" }} className="col-3 ">
+                <img
+                  src={
+                    this.props.infor.thumbImage
+                      ? this.props.infor.thumbImage
+                      : ""
+                  }
+                  width="100%"
+                  height="auto"
+                />
               </div>
               <div
                 style={{ paddingLeft: 20, paddingRight: 10, fontSize: 12 }}
                 className="col-8"
               >
-                <p style={{ color: "#888" }}>
-                  {lang.t("_company_infor_category")}{" "}
-                  <span style={{ color: "#0066cc" }}> Ngành ô tô</span>
-                </p>
                 <p>{this.props.infor.address}</p>
                 <p style={{ color: "black", fontWeight: "bold" }}>
                   {this.props.infor.phoneNumber}

@@ -13,7 +13,7 @@ module.exports = {
   director: "取り市役所:",
   directorEmail: "社長のメール:",
   mainCategory: "経済分類 * :",
-  imageCompany: "Ảnh công ty",
+  imageCompany: "会社ロゴ",
   shortDescription: "説明",
   register: "申し込み",
   _company_infor_category: "業種 :",

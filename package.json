@@ -23,7 +23,6 @@
     "redux-thunk": "^2.2.0",
     "request": "^2.83.0"
   },
-  "proxy": "http://dev.hayasw.com:4001/api",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

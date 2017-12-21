@@ -95,7 +95,7 @@ export default class Example extends React.Component {
             duration={this.state.duration}
             layout={this.state.layout}
             auto={true}
-            autoRotateTime={1500}
+            autoRotateTime={setting.rotateDurarota}
           />
         </div>
       </div>

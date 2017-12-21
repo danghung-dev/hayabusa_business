@@ -1,4 +1,4 @@
 module.exports = {
   imageNumber: 10,
-  rotateDurarota: 4000
+  rotateDurarota: 2000
 };

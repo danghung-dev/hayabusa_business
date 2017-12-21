@@ -26,11 +26,15 @@ export default class Company extends React.Component {
                 className="col-3 row no-gutters justify-content-center"
               >
                 {
-                  // <img
-                  // src="http://logo.trangvangvietnam.com/L3954750400.gif"
-                  // width="75"
-                  // height="75"
-                  // />
+                  <img
+                    src={
+                      this.props.infor.thumbImage
+                        ? this.props.infor.thumbImage
+                        : ""
+                    }
+                    width="100%"
+                    height="auto"
+                  />
                 }
               </div>
               <div

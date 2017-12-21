@@ -18,26 +18,56 @@ export default class Company extends React.Component {
       >
         <h5 style={{ paddingTop: 20 }}>{this.props.infor.name}</h5>
         <Star number={5} />
-        <p style={{ color: "#888" }}>
-          {lang.t("_company_Detail_address")}{" "}
-          <span style={{ color: "#0066cc" }}> {this.props.infor.address}</span>
+        <div style={{ marginTop: 10 }} className="row no-gutters">
+          <div
+            style={{ border: "1px solid gray" }}
+            className="col-3  justify-content-center"
+          >
+            <img
+              src={
+                this.props.infor.thumbImage ? this.props.infor.thumbImage : ""
+              }
+              width="100%"
+              height="auto"
+            />
+          </div>
+          <div
+            style={{ paddingLeft: 20, paddingRight: 10, fontSize: 12 }}
+            className="col-9"
+          >
+            <p style={{ color: "#888" }}>
+              {lang.t("_company_Detail_address")}{" "}
+              <span style={{ color: "#0066cc" }}>
+                {" "}
+                {this.props.infor.address}
+              </span>
+            </p>
+            <p style={{ color: "#888" }}>
+              {lang.t("_company_Detail_Tel")}{" "}
+              <span style={{ color: "#0066cc" }}>
+                {" "}
+                {this.props.infor.phoneNumber}
+              </span>
+            </p>
+            <p style={{ color: "#888" }}>
+              {lang.t("_company_Detail_email")}{" "}
+              <span style={{ color: "#0066cc" }}>
+                {" "}
+                {this.props.infor.email}
+              </span>
+            </p>
+            <p style={{ color: "#888" }}>
+              {lang.t("_company_Detail_web")}{" "}
+              <a href={this.props.infor.website} style={{ color: "#0066cc" }}>
+                {this.props.infor.website}
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <p style={{ color: "#888", marginTop: 10 }}>
+          {lang.t("_company_Detail_Infor")}
         </p>
-        <p style={{ color: "#888" }}>
-          {lang.t("_company_Detail_Tel")}{" "}
-          <span style={{ color: "#0066cc" }}>
-            {" "}
-            {this.props.infor.phoneNumber}
-          </span>
-        </p>
-        <p style={{ color: "#888" }}>
-          {lang.t("_company_Detail_email")}{" "}
-          <span style={{ color: "#0066cc" }}> {this.props.infor.email}</span>
-        </p>{" "}
-        <p style={{ color: "#888" }}>
-          {lang.t("_company_Detail_web")}{" "}
-          <a href={this.props.infor.website} style={{ color: "#0066cc" }}> {this.props.infor.website}</a>
-        </p>
-        <p style={{ color: "#888" }}>{lang.t("_company_Detail_Infor")}</p>
         <p style={{ color: "black" }}>{this.props.infor.infor}</p>
       </div>
     );

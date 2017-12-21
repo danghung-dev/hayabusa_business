@@ -8,6 +8,7 @@ import { getList } from "../HomePage/actions";
 
 import InlineForm from "../../compoments/InlineForm";
 import InlineSelect from "../../compoments/InlineSelect";
+import InlineImageInput from "../../compoments/InlineImageInput";
 export class RegisterCompany extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -22,12 +23,15 @@ export class RegisterCompany extends React.PureComponent {
       director: "",
       directorEmail: "",
       mainCategory: "",
-      shortDescription: ""
+      shortDescription: "",
+      imagePath: null,
+      imageCompany: null
     };
     this.isRegister = false;
     this.setInputState = this.setInputState.bind(this);
     this.setSelectState = this.setSelectState.bind(this);
     this.register = this.register.bind(this);
+    this.chooseImage = this.chooseImage.bind(this);
   }
   componentDidMount() {
     this.props.getList();
@@ -39,6 +43,14 @@ export class RegisterCompany extends React.PureComponent {
     this.setState({ [name]: event.value });
   }
   register() {
+    if (this.state.mainCategory === "") {
+      alert("Vui lòng nhập ngành nghề");
+      return;
+    }
+    if (!this.state.imagePath) {
+      alert("Vui lòng up ảnh");
+      return;
+    }
     this.isRegister = true;
     const data = {
       name: this.state.name,
@@ -47,7 +59,8 @@ export class RegisterCompany extends React.PureComponent {
       website: this.state.Website,
       shortDescription: this.state.shortDescription,
       email: this.state.email,
-      categoryId: this.state.mainCategory
+      categoryId: this.state.mainCategory,
+      thumb: this.state.imagePath
     };
     this.props.addCompany(data);
   }
@@ -60,6 +73,16 @@ export class RegisterCompany extends React.PureComponent {
       result.push(temp);
     });
     return result;
+  }
+  chooseImage(event) {
+    const reader = new FileReader();
+    const imagePath = event.target.files[0];
+
+    this.setState({ imagePath: imagePath });
+    reader.onload = e => {
+      this.setState({ imageCompany: e.target.result });
+    };
+    reader.readAsDataURL(imagePath);
   }
   render() {
     if (this.props.success && this.isRegister) {
@@ -173,6 +196,15 @@ export class RegisterCompany extends React.PureComponent {
                   value={this.state.mainCategory}
                   onChange={event => {
                     this.setSelectState("mainCategory", event);
+                  }}
+                />
+                <InlineImageInput
+                  label={lang.t("imageCompany")}
+                  id="imageCompany"
+                  placeholder=""
+                  image={this.state.imageCompany}
+                  onChange={event => {
+                    this.chooseImage(event);
                   }}
                 />
                 <div className="form-group no-gutters">

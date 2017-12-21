@@ -13,6 +13,7 @@ module.exports = {
   director: "Tên giám đốc:",
   directorEmail: "Email giám đốc:",
   mainCategory: "Ngành nghề * :",
+  imageCompany: "Ảnh công ty",
   shortDescription: "Mô tả chi tiết",
   register: "Đăng kí",
   _company_infor_category: "Ngành :",

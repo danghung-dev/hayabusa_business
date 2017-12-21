@@ -20,8 +20,10 @@
     "react-select": "^1.1.0",
     "reactstrap": "^5.0.0-alpha.4",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "request": "^2.83.0"
   },
+  "proxy": "http://dev.hayasw.com:4001/api",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -30,11 +32,7 @@
     "lint": "jshint .",
     "validate": "npm ls"
   },
-  "pre-commit": [
-    "lint",
-    "validate",
-    "test"
-  ],
+  "pre-commit": ["lint", "validate", "test"],
   "devDependencies": {
     "precommit-hook": "^3.0.0"
   }

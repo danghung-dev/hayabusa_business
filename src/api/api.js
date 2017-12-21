@@ -52,18 +52,22 @@ export async function api_getCompanyFromID(companyID) {
   }
 }
 export async function api_addCompany(data) {
+  const dataForm = new FormData();
+
+  Object.keys(data).forEach(key => {
+    dataForm.append(key, data[key]);
+  });
+  const url = `${BASE_URL}/companies`;
   const options = {
-    url: `${BASE_URL}/companies`,
     method: "POST",
-    body: JSON.stringify(data),
-    headers: {
-      "Content-Type": "application/json"
-    }
+    headers: {},
+    body: dataForm
   };
   try {
-    const result = await doRequest(options);
+    const result = await doRequestFormData(url, options);
     return result;
   } catch (error) {
+    console.log(error);
     return { success: false, data: null };
   }
 }
@@ -88,7 +92,22 @@ function doRequest(options) {
     }
   });
 }
-
+function doRequestFormData(url, options) {
+  return new Promise((resolve, reject) => {
+    try {
+      // console.log("options", options);
+      fetch(url, options)
+        .then(data => {
+          resolve(data.json());
+        })
+        .catch(function(error) {
+          reject(error);
+        });
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
 // module.exports = {
 //   getListCategory
 // };

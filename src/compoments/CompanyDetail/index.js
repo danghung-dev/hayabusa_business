@@ -65,7 +65,7 @@ export default class Company extends React.Component {
         <p style={{ color: "#888", marginTop: 10 }}>
           {lang.t("_company_Detail_Infor")}
         </p>
-        <p style={{ color: "black" }}>{this.props.infor.infor}</p>
+        <p style={{ color: "black" }}>{this.props.infor.shortDescription}</p>
       </div>
     );
   }

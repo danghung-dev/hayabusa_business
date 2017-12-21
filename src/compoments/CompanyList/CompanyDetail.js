@@ -4,6 +4,7 @@ import Select from "react-select";
 import Star from "./Star";
 import "../../font/css/font-awesome.min.css";
 import lang from "../../languages";
+import { Link } from "react-router-dom";
 export default class Company extends React.Component {
   constructor() {
     super();
@@ -18,7 +19,13 @@ export default class Company extends React.Component {
             <div style={styles.number}> {this.props.number}</div>
           </div>
           <div className="col-10">
-            <h5 style={styles.title}>{this.props.infor.name}</h5>
+            <Link
+              to={`/detail?id=${this.props.infor._id}`}
+              style={styles.title}
+              className="row no-gutters"
+            >
+              {this.props.infor.name}
+            </Link>
             <Star number={4} />
             <div style={{ marginTop: 10 }} className="row no-gutters">
               <div style={{ border: "1px solid gray" }} className="col-3 ">
@@ -36,9 +43,17 @@ export default class Company extends React.Component {
                 style={{ paddingLeft: 20, paddingRight: 10, fontSize: 12 }}
                 className="col-8"
               >
-                <p>{this.props.infor.address}</p>
-                <p style={{ color: "black", fontWeight: "bold" }}>
-                  {this.props.infor.phoneNumber}
+                <p>
+                  {lang.t("_company_Detail_address") +
+                    "  " +
+                    this.props.infor.address}
+                </p>
+                <p>
+                  {" "}
+                  {lang.t("_company_Detail_Tel")}{" "}
+                  <span style={{ color: "black", fontWeight: "bold" }}>
+                    {"  " + this.props.infor.phoneNumber}
+                  </span>
                 </p>
               </div>
             </div>
@@ -66,9 +81,11 @@ export default class Company extends React.Component {
             style={{ paddingTop: 20, paddingBottom: 20 }}
             className="col-6 row no-gutters justify-content-center"
           >
-            <a href="" style={{ color: " #007BAC" }}>
-              {" "}
-              {this.props.infor.email}{" "}
+            <a
+              href={`mailto:${this.props.infor.email}`}
+              style={{ color: " #007BAC" }}
+            >
+              {this.props.infor.email}
             </a>
           </div>
           <div
@@ -111,6 +128,7 @@ const styles = {
   },
   title: {
     color: "#333333",
+    fontWeight: "bold",
     marginTop: 10
   }
 };

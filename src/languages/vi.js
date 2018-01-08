@@ -17,7 +17,7 @@ module.exports = {
   shortDescription: "Mô tả chi tiết",
   register: "Đăng kí",
   _company_infor_category: "Ngành :",
-  cateName: "経済分類：",
+  cateName: "Ngành nghề :",
   _company_Detail_address: "Đ/c:",
   _company_Detail_Tel: "Tel:",
   _company_Detail_Fax: "Fax:",

@@ -9,7 +9,10 @@ import lang from "../../languages";
 export class CompanyDetail extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      lang: localStorage.getItem("lang") ? localStorage.getItem("lang") : "en"
+    };
+    lang.changeLanguage(this.state.lang);
   }
   componentWillMount() {
     const query = parse(this.props.location.search.substr(1));

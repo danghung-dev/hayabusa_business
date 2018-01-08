@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 export default class CategoryList extends React.Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      lang: localStorage.getItem("lang") ? localStorage.getItem("lang") : "en"
+    };
     this.parseTable = this.parseTable.bind(this);
   }
   // eslint-disable-line react/prefer-stateless-function
@@ -38,7 +40,7 @@ export default class CategoryList extends React.Component {
               let link = `/category/${item1._id}`;
               return (
                 <td>
-                  <Link to={link}>{item1.name}</Link>
+                  <Link to={link}>{this.state.lang==="jan" ? item1.name : item1.name_vi}</Link>
                 </td>
               );
             });

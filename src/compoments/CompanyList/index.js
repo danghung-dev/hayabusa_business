@@ -6,7 +6,9 @@ import lang from "../../languages";
 export default class CompanyList extends React.Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      lang: localStorage.getItem("lang") ? localStorage.getItem("lang") : "en"
+    };
   }
   // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -23,7 +25,10 @@ export default class CompanyList extends React.Component {
         >
           <div style={{ margin: 20 }}>
             <h5 style={styles.title}>
-              {lang.t('cateName')} {this.props.categoryInfo.name}
+              {lang.t("cateName")}{" "}
+              {this.state.lang === "jan"
+                ? this.props.categoryInfo.name
+                : this.props.categoryInfo.name_vi}
             </h5>
             {this.props.data.map((item, id) => (
               <Company key={id} infor={item} number={id + 1} />

@@ -9,7 +9,7 @@ i18next.init(
     debug: true,
     resources: {
       en: {
-        translation: en
+        translation: vi
       },
       vi: {
         translation: vi

@@ -25,8 +25,11 @@ export class RegisterCompany extends React.PureComponent {
       mainCategory: "",
       shortDescription: "",
       imagePath: null,
-      imageCompany: null
+      imageCompany: null,
+
+      lang: localStorage.getItem("lang") ? localStorage.getItem("lang") : "en"
     };
+    lang.changeLanguage(this.state.lang);
     this.isRegister = false;
     this.setInputState = this.setInputState.bind(this);
     this.setSelectState = this.setSelectState.bind(this);
@@ -103,11 +106,11 @@ export class RegisterCompany extends React.PureComponent {
         </div>
         <div style={{ marginTop: 30 }} className="row">
           <div className="col-10 col-sm-8 offset-1 offset-sm-2">
-            <h5 style={{ color: "blue", marginTop: 20, marginBottom: 20 }}>
+            <h1 style={{ color: "blue", marginTop: 20, marginBottom: 20 }}>
               {lang.t("companyInfor")}
-            </h5>
-            <div style={{ border: "1px solid gray" }}>
-              <form style={{ marginTop: 10, padding: 20 }}>
+            </h1>
+            <div style={{ border: "1px solid gray" }} className="row">
+              <form style={{ marginTop: 10, padding: 20 }} className="col-12">
                 <InlineForm
                   label={lang.t("name")}
                   id="name"

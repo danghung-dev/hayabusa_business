@@ -21,7 +21,6 @@ import CompanyDetal from "./containers/CompanyDetail";
 import Company from "./containers/Company";
 import Header from "./compoments/Header";
 import "bootstrap/dist/css/bootstrap.css";
-
 // Create a history of your choosing (we're using a browser history in this case)
 // const history = createHistory();
 

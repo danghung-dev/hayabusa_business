@@ -11,6 +11,7 @@
     "immutable": "^3.8.2",
     "jquery": "^3.2.1",
     "react": "^16.2.0",
+    "react-bootstrap": "^0.32.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
@@ -31,7 +32,11 @@
     "lint": "jshint .",
     "validate": "npm ls"
   },
-  "pre-commit": ["lint", "validate", "test"],
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ],
   "devDependencies": {
     "precommit-hook": "^3.0.0"
   }

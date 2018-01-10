@@ -72,7 +72,7 @@ export class RegisterCompany extends React.PureComponent {
     list.map(item => {
       let temp = {};
       temp.value = item._id;
-      temp.label = item.name;
+      temp.label = this.state.lang === "jan" ? item.name : item.name_vi;
       result.push(temp);
     });
     return result;
@@ -165,13 +165,16 @@ export class RegisterCompany extends React.PureComponent {
                     this.setInputState("email", event);
                   }}
                 />
-                <InlineForm
-                  label={lang.t("city")}
+                <InlineSelect
+                  title={lang.t("city")}
                   id="city"
-                  placeholder=""
+                  options={[
+                    { value: "vi", label: lang.t("_VietName") },
+                    { value: "jan", label: lang.t("_Jan") }
+                  ]}
                   value={this.state.city}
                   onChange={event => {
-                    this.setInputState("city", event);
+                    this.setSelectState("city", event);
                   }}
                 />
                 <InlineForm

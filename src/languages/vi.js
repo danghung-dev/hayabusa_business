@@ -9,7 +9,7 @@ module.exports = {
   Fax: "Số Fax:",
   Website: "Website :",
   email: "Email:",
-  city: "Tỉnh/Thành phố *:",
+  city: "Đất nước *:",
   director: "Tên giám đốc:",
   directorEmail: "Email giám đốc:",
   mainCategory: "Ngành nghề * :",
@@ -26,5 +26,7 @@ module.exports = {
   _company_Detail_Infor: "Thông tin chi tiết",
   _footer_name_text: "Công ty HAYABUSA :",
   _footer_Web_text: " Nhà thiết kế web chuyên nghiệp.",
-  _footer_text: "Chuyên gia liên kết doanh nghiệp Việt Nam - Nhật Bản."
+  _footer_text: "Chuyên gia liên kết doanh nghiệp Việt Nam - Nhật Bản.",
+  _VietName: "Việt Nam",
+  _Jan: "Nhật"
 };

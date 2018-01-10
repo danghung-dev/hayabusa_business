@@ -14,12 +14,14 @@ export default class Header extends React.Component {
         style={{ height: 50, backgroundColor: "yellow", margin: 0 }}
         className="row"
       >
-        <img
-          style={{ paddingLeft: 30, paddingTop: 15 }}
-          src={logo}
-          width="auto"
-          height={30}
-        />
+        <Link to={`/`}>
+          <img
+            style={{ paddingLeft: 30, paddingTop: 15 }}
+            src={logo}
+            width="auto"
+            height={30}
+          />
+        </Link>
       </div>
     );
   }

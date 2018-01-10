@@ -15,10 +15,10 @@ export default class Company extends React.Component {
     return (
       <div style={styles.index}>
         <div className="row no-gutters">
-          <div className="col-2">
+          <div className="col-xs-2">
             <div style={styles.number}> {this.props.number}</div>
           </div>
-          <div className="col-10">
+          <div style={{ paddingTop: 15 }} className="col-xs-10">
             <Link
               to={`/detail?id=${this.props.infor._id}`}
               style={styles.title}
@@ -28,7 +28,7 @@ export default class Company extends React.Component {
             </Link>
             <Star number={4} />
             <div style={{ marginTop: 10 }} className="row no-gutters">
-              <div style={{ border: "1px solid gray" }} className="col-3 ">
+              <div style={{ border: "1px solid gray" }} className="col-xs-3 ">
                 <img
                   src={
                     this.props.infor.thumbImage
@@ -41,7 +41,7 @@ export default class Company extends React.Component {
               </div>
               <div
                 style={{ paddingLeft: 20, paddingRight: 10, fontSize: 12 }}
-                className="col-8"
+                className="col-xs-8"
               >
                 <p>
                   {lang.t("_company_Detail_address") +
@@ -61,7 +61,7 @@ export default class Company extends React.Component {
               {this.props.infor.images.map(item => {
                 <div
                   style={{ border: "1px solid #cecece", marginRight: 5 }}
-                  className="col-2"
+                  className="col-xs-2"
                 >
                   <img src={item} width="100%" height="100%" />
                 </div>;
@@ -79,7 +79,7 @@ export default class Company extends React.Component {
         >
           <div
             style={{ paddingTop: 20, paddingBottom: 20 }}
-            className="col-6 row no-gutters justify-content-center"
+            className="col-xs-6 row no-gutters justify-content-center"
           >
             <a
               href={`mailto:${this.props.infor.email}`}
@@ -90,7 +90,7 @@ export default class Company extends React.Component {
           </div>
           <div
             style={{ paddingTop: 20, paddingBottom: 20 }}
-            className="col-6 row no-gutters justify-content-center"
+            className="col-xs-6 row no-gutters justify-content-center"
           >
             <a href={this.props.infor.website} style={{ color: " #007BAC" }}>
               {" "}
@@ -128,7 +128,6 @@ const styles = {
   },
   title: {
     color: "#333333",
-    fontWeight: "bold",
-    marginTop: 10
+    fontWeight: "bold"
   }
 };

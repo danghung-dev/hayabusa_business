@@ -14,12 +14,12 @@ export default class Company extends React.Component {
     return (
       <div
         style={styles.index}
-        className="col-10 offset-1 col-sm-8 offset-sm-2"
+        className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2"
       >
         <h5 style={{ paddingTop: 20 }}>{this.props.infor.name}</h5>
         <Star number={5} />
         <div style={{ marginTop: 10 }} className="row no-gutters">
-          <div style={{ border: "1px solid gray" }} className="col-3  ">
+          <div style={{ border: "1px solid gray" }} className="col-xs-3  ">
             <img
               src={
                 this.props.infor.thumbImage ? this.props.infor.thumbImage : ""
@@ -30,7 +30,7 @@ export default class Company extends React.Component {
           </div>
           <div
             style={{ paddingLeft: 20, paddingRight: 10, fontSize: 12 }}
-            className="col-9"
+            className="col-xs-9"
           >
             <p style={{ color: "#888" }}>
               {lang.t("_company_Detail_address")}{" "}

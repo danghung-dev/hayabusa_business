@@ -15,7 +15,7 @@ export default class MySelect extends React.Component {
         className="form-group row "
         className={this.props.className ? this.props.className : "row"}
       >
-        <span style={{ marginTop: 5 }} className="col-sm-3">
+        <span style={{ marginTop: 5, fontWeight: "bold" }} className="col-sm-3">
           {this.props.title}
         </span>
         <div style={{}} className="col-sm-9">

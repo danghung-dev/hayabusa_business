@@ -2,3 +2,7 @@ body {
   width: 100%;
   font-family: sans-serif;
 }
+.no-gutters {
+  margin-left: 0px;
+  margin-right: 0px;
+}

@@ -105,7 +105,7 @@ export class RegisterCompany extends React.PureComponent {
           {lang.t("hayabusa")}
         </div>
         <div style={{ marginTop: 30 }} className="row">
-          <div className="col-10 col-sm-8 offset-1 offset-sm-2">
+          <div className="col-xs-10 col-sm-8 col-offset-1 col-sm-offset-2">
             <h1 style={{ color: "blue", marginTop: 20, marginBottom: 20 }}>
               {lang.t("companyInfor")}
             </h1>
@@ -210,7 +210,7 @@ export class RegisterCompany extends React.PureComponent {
                     this.chooseImage(event);
                   }}
                 />
-                <div className="form-group no-gutters">
+                <div className="form-group row">
                   <label className="col-sm-12">
                     {lang.t("shortDescription")}
                   </label>
@@ -232,7 +232,7 @@ export class RegisterCompany extends React.PureComponent {
               onClick={this.register}
               style={{ marginTop: 50, marginBottom: 20 }}
               type="submit"
-              className="btn btn-primary col-6 offset-3 col-sm-4 offset-sm-4"
+              className="btn btn-primary col-xs-6 col-xs-offset-3 col-sm-4 offset-sm-4"
             >
               {lang.t("register")}
             </button>

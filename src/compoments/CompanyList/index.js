@@ -14,14 +14,14 @@ export default class CompanyList extends React.Component {
   render() {
     return (
       <div className="row no-gutters">
-        <div className="col-3" />
+        <div className="col-xs-3" />
         <div
           style={{
             backgroundColor: "#ededed",
             border: " 1px solid #e0e0e0",
             height: "auto"
           }}
-          className="col-6"
+          className="col-xs-6"
         >
           <div style={{ margin: 20 }}>
             <h5 style={styles.title}>

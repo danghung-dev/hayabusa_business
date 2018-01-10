@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Select from 'react-select';
+import React from "react";
+import PropTypes from "prop-types";
+import Select from "react-select";
 export default class Star extends React.Component {
   constructor() {
     super();
@@ -8,25 +8,23 @@ export default class Star extends React.Component {
   }
   // eslint-disable-line react/prefer-stateless-function
   render() {
-    return (
-     [0,0,0,0,0].map((item,index)=>{
-       if(index< this.props.number){
-         return <span style={styles.yellowStar} className="fa fa-star" ></span>
-       }
-       return <span style={styles.blackStar} className="fa fa-star" ></span>
-     })
-    );
+    return [0, 0, 0, 0, 0].map((item, index) => {
+      if (index < this.props.number) {
+        return <span style={styles.yellowStar} className="fa fa-star" />;
+      }
+      return <span style={styles.blackStar} className="fa fa-star" />;
+    });
   }
 }
 Star.propTypes = {
-  number: PropTypes.any,
+  number: PropTypes.any
 };
 
 const styles = {
   yellowStar: {
-    color: 'yellow',
+    color: "yellow"
   },
   blackStar: {
-    color: 'gray',
-  },
+    color: "gray"
+  }
 };

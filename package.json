@@ -19,7 +19,6 @@
     "react-router-redux": "^5.0.0-alpha.8",
     "react-scripts": "1.0.17",
     "react-select": "^1.1.0",
-    "reactstrap": "^5.0.0-alpha.4",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "request": "^2.83.0"
@@ -32,11 +31,7 @@
     "lint": "jshint .",
     "validate": "npm ls"
   },
-  "pre-commit": [
-    "lint",
-    "validate",
-    "test"
-  ],
+  "pre-commit": ["lint", "validate", "test"],
   "devDependencies": {
     "precommit-hook": "^3.0.0"
   }

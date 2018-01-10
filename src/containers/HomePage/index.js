@@ -115,7 +115,7 @@ export class Home extends React.PureComponent {
         </div>
 
         <div style={styles.categoryBlock}>
-          <div className="col-10 col-sm-8 offset-1 offset-sm-2">
+          <div className="col-xs-10 col-sm-8 col-xs-offset-1 col-sm-offset-2">
             <h3 style={{ color: "blue", marginTop: 50, marginBottom: 20 }}>
               {lang.t("categoryList")}
             </h3>
@@ -124,7 +124,7 @@ export class Home extends React.PureComponent {
               style={{ marginTop: 50, marginBottom: 20 }}
               onClick={this.register}
               type="submit"
-              className="btn btn-primary col-6 offset-3 col-sm-4 offset-sm-4"
+              className="btn btn-primary col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4"
             >
               {lang.t("register")}
             </button>

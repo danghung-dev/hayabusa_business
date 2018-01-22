@@ -82,10 +82,10 @@ export default class Company extends React.Component {
             className="col-xs-6 row no-gutters justify-content-center"
           >
             <a
-              href={`mailto:${this.props.infor.email}`}
+              href={`mailto:${this.props.infor.email}?subject=交流したい`}
               style={{ color: " #007BAC" }}
             >
-              {this.props.infor.email}
+              {lang.t("coordinator")}
             </a>
           </div>
           <div

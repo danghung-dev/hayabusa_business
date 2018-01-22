@@ -28,5 +28,6 @@ module.exports = {
   _footer_Web_text: " ホームページ作成対応",
   _footer_text: " 交流したい会社は連絡してください。メールにて連絡代行します。",
   _VietName: "ベトナム",
-  _Jan: "日本"
+  _Jan: "日本",
+  coordinator: "交流する"
 };

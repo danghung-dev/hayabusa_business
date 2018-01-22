@@ -28,5 +28,6 @@ module.exports = {
   _footer_Web_text: " Nhà thiết kế web chuyên nghiệp.",
   _footer_text: "Chuyên gia liên kết doanh nghiệp Việt Nam - Nhật Bản.",
   _VietName: "Việt Nam",
-  _Jan: "Nhật"
+  _Jan: "Nhật",
+  coordinator: "Giao lưu"
 };
